@@ -1,0 +1,73 @@
+<odoo>
+    <template id="propertyorder_inherit" inherit_id="aas_property_management.propertyorder">
+
+        <xpath expr="//div[@name='information']" position="after">
+            <t t-foreach="docs" t-as="property">
+
+                <div>
+                    <span t-if="property.for_rent == True ">
+                        <strong>For Rent:  </strong>
+                        <span t-field="property.for_rent" />
+                    </span>
+                    
+                </div>
+                <div>
+
+                    <span t-if="property.for_rent == True ">
+                        <strong>Rent Type:  </strong>
+                        <span t-field="property.rent_type" />
+                    </span>
+                </div>
+                <div>
+                    <span t-if="property.for_rent == True ">
+                    <strong>Rent Price:  </strong>
+                    <span t-field="property.expected_rent_price" />
+                    </span>
+                </div>
+                <div>
+                    <span t-if="property.for_rent == True ">
+                    <strong>Refundable Insurance:  </strong>
+                    <span t-field="property.refundable_insurance" />
+                    </span>
+                </div>
+            </t>
+        </xpath>
+
+    
+        <xpath expr="//td[@name='owner_name']" position="after">
+            <span t-if="property.is_any_sub_for_rent == True ">
+
+
+            <span t-if="sub_property.for_rent == True ">
+                <td>
+                    <span t-field="sub_property.rent_type" />
+                </td>
+                <td>
+                    <span t-field="sub_property.expected_rent_price" />
+                </td>
+            </span>
+            <span t-if="sub_property.for_rent == False ">
+                <td>
+                    <strong>None </strong>
+                </td>
+                <td>
+                    <strong>None </strong>
+                </td>
+            </span>
+
+                </span>
+        </xpath>
+
+        <xpath expr="//th[@name='owner_name']" position="after">
+            
+            <span t-if="property.is_any_sub_for_rent == True ">
+
+            <t t-foreach="docs" t-as="property">
+                    <th>Rent Type</th>
+                    <th> Expected Rent Price</th>
+                </t>
+                </span>
+        </xpath>
+
+    </template>
+</odoo>

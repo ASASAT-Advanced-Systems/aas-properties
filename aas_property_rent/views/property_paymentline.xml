@@ -1,0 +1,34 @@
+<odoo>
+    <!-- <record id="property_rentpaymentline_action" model="ir.actions.act_window">
+        <field name="name">Property Rent Paymentline</field>
+        <field name="res_model">property.rentpaymentline</field>
+        <field name="view_mode">tree</field>
+ 
+    </record> -->
+ 
+ 
+ 
+     <record id="property_rentpaymentline_view_tree" model="ir.ui.view">
+         <field name="name">property.rentpaymentline.view.tree</field>
+         <field name="model">property.rentpaymentline</field>
+         <field name="arch" type="xml">
+             <tree string="payments" decoration-success = "state in ['paid']" >
+                 <field name="name" />
+                 <field name="Due_Date" />
+                 <field name="Payment_cost"  attrs="{'invisible':[('Payment_cost', '=', 0)]}"/>
+                 <field name="tax"  attrs="{'invisible':[('tax', '=', 0)]}" />
+                 <field name="total_amount" attrs="{'invisible':[('total_amount', '=', 0)]}"/>
+                 <field name="property_rent_state_related" invisible="1" />
+                 <field name="state" attrs="{'invisible':[('Payment_cost', '=', 0)]}" widget="badge" decoration-success = "state in ['paid']" decoration-danger = "state in ['not paid']"/>
+                 <field name="is_rent_payment" invisible="1"/>
+
+                 <button name="action_cancel_pay" string="Cancel" type="object" icon="fa-times" attrs="{'invisible':['|','|',('name', '=', 'Total'),('state', '=', 'not paid'),('property_rent_state_related', '!=', 'rent order')]}" />
+                 <button name="action_pay" string="Pay" type="object" icon="fa-check" attrs="{'invisible':['|','|',('name', '=', 'Total'),('property_rent_state_related', '!=', 'rent order'),('state','=','paid')]}" />
+
+             </tree>
+         </field>
+     </record>
+
+     
+     
+</odoo>

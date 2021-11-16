@@ -1,0 +1,303 @@
+<odoo>
+
+    <record id="property_action" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="res_model">property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_type': True}</field>
+    </record>
+
+    <!-- property tree view -->
+    <record id="property_view_tree" model="ir.ui.view">
+        <field name="name">property.view.tree</field>
+        <field name="model">property</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="state" />
+                <field name="property_type_id" widget="many2one_tags" />
+                <field name="property_owner_id" widget="many2one_tags" />
+                <field name="residential_type" optional="hide" />
+                <field name="purpose" optional="hide" />
+            </tree>
+        </field>
+    </record>
+    <!-- property form view -->
+    <record id="property_view_form" model="ir.ui.view">
+        <field name="name">property.view.form</field>
+        <field name="model">property</field>
+        <field name="arch" type="xml">
+            <form string="test">
+                <header name="Property Header">
+                    <button name="action_set_confirmed" string="CONFIRM" type="object" class="btn-primary" attrs="{'invisible': [('is_confirmed', '=', True)]}" />
+                    <button name="action_reset_confirmed" string="RESET TO DRAFT" type="object" class="btn-primary" attrs="{'invisible': [('is_confirmed', '=', False)]}" />
+                    <field name="state" widget="statusbar" statusbar_visible=" " />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box" />
+                    <div class="oe_button_box" name="button_box2" />
+                    <widget name="web_ribbon" title="CONFIRMED" attrs="{'invisible': [('is_confirmed', '=', False)]}" />
+                    
+                    <group>
+
+                        <h1>
+                            <group>
+                                <field name="name" placeholder="Property Name" />
+                            </group>
+                        </h1>
+                        <div>
+                            <group>
+                                <br></br>
+                                <field name="purpose" class="oe_inline" />
+                            </group>
+                        </div>
+
+                    </group>
+
+                    <group>
+                        <div>
+                            <group>
+                                <field name="property_owner_id" widget="many2one_tags"  />
+
+                            </group>
+
+                        </div>
+                        <div>
+                            <group>
+                                <field name="property_type_id"  options="{'horizontal': true}" />
+
+                            </group>
+
+                        </div>
+                        <!-- <field name="property_type_id_purpose_related" invisible="1"/>
+                        <field name="property_type_id" widget="radio" options="{'horizontal': true}" domain="property_type_id_domain"/> -->
+                        <!-- <field name="property_type_id_domain" invisible="1"/> -->
+                    </group>
+                    <group>
+                        <div>
+                            <group>
+                                <h3>
+                                    <strong>
+                                        Property Address
+                                    </strong>
+                                </h3>
+                            </group>
+                            <div>
+                                <div class="o_address_format" attrs="{'invisible': [('parent_property_id', '!=', False)]}">
+                                    <field name="street" placeholder="Street..." class="o_address_street" />
+                                    <field name="street2" placeholder="Street 2..." class="o_address_street" />
+                                    <field name="city" placeholder="City" class="o_address_state oe_inline" />
+                                    <field name="district" placeholder="District" class="o_address_state oe_inline" />
+                                    <field name="zip" placeholder="ZIP" class="o_address_zip oe_inline" />
+                                    <field name="country_id" placeholder="Country" class="o_address_country" />
+                                </div>
+                                <div class="o_address_format" attrs="{'invisible': [('parent_property_id', '=', False)]}">
+                                    <field name="parent_street" placeholder="Street..." class="o_address_street" />
+                                    <field name="parent_street2" placeholder="Street 2..." class="o_address_street" />
+                                    <field name="parent_city" placeholder="City" class="o_address_state oe_inline" />
+                                    <field name="parent_district" placeholder="District" class="o_address_state oe_inline" />
+                                    <field name="parent_zip" placeholder="ZIP" class="o_address_zip oe_inline" />
+                                    <field name="parent_country_id" placeholder="Country" class="o_address_country" />
+                                </div>
+                            </div>
+                            <div>
+                                <group>
+                                    <h3>
+                                        <strong>
+                                            Direction of Streets
+    
+                                        </strong>
+                                    </h3>
+                                </group>
+                                <field name="has_street_length_related" invisible="1"/>
+
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <field name="north_dirction" />
+                                        <strong>North &#160;  </strong>
+
+
+                                        
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <field name="north_dirction_length"  attrs="{'invisible': ['|',('has_street_length_related','=',False),('north_dirction', '=', False)]}" />
+                                            </div>
+                                            <div >
+                                                <strong attrs="{'invisible': ['|',('has_street_length_related','=',False),('north_dirction', '=', False)]}" >
+                                                    m
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <field name="east_dirction" />
+                                        <strong>East  </strong>
+                                            
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <field name="east_dirction_length"  attrs="{'invisible': ['|',('has_street_length_related','=',False),('east_dirction', '=', False)]}" />
+                                            </div>
+                                            <div >
+                                                <strong attrs="{'invisible': ['|',('has_street_length_related','=',False),('east_dirction', '=', False)]}" >
+                                                    m
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <field name="west_dirction" />
+                                        <strong>West  </strong>
+                                        
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <field name="west_dirction_length"  attrs="{'invisible': ['|',('has_street_length_related','=',False),('west_dirction', '=', False)]}" />
+                                            </div>
+                                            <div >
+                                                <strong attrs="{'invisible': ['|',('has_street_length_related','=',False),('west_dirction', '=', False)]}" >
+                                                    m
+                                                </strong>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-3">
+                                        <field name="south_dirction" />
+                                        <strong>South &#160;  </strong>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <field name="south_dirction_length"  attrs="{'invisible': ['|',('has_street_length_related','=',False),('south_dirction', '=', False)]}" />
+                                            </div>
+                                            <div >
+                                                <strong attrs="{'invisible': ['|',('has_street_length_related','=',False),('south_dirction', '=', False)]}" >
+                                                    m
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <group>
+                                <h3>
+                                    <strong>
+                                        Property Information
+                                    </strong>
+                                </h3>
+                            </group>
+
+                            <group>
+
+
+                                <field name="deed_number" class="oe_inline" />
+                                <field name="is_mu_related" invisible="1" />
+                                <field name="is_mu" attrs="{'invisible': [('is_mu_related', '=', False)]}" />
+                                <field name="residential_type" attrs="{'invisible': ['|','|',('property_type_name_related', '=', 'Villa Duplex'),('property_type_name_related', '=', 'Villa'),('purpose', '!=', 'residential')]}" class="oe_inline" />
+                                <field name="property_type_name_related" invisible="1" />
+                                <field name="property_construction_date" class="oe_edit_only" attrs="{'invisible': [('property_type_name_related', '=', 'Land')]}" />
+                                <field name="property_building_age" attrs="{'invisible': [('property_type_name_related', '=', 'Land')]}" />
+                                <field name="has_parent_type_related" invisible="1" />
+                                <field name="parent_property_id" attrs="{'invisible': [('has_parent_type_related', '=', False)]}" />
+                                <field name="property_area" class="oe_inline" />
+                                <field name="property_building_area" class="oe_inline" attrs="{'invisible': [('property_type_name_related', 'not in', ['Villa','Villa Duplex','Building'])]}"/>
+                                
+                                <field name="is_floor" invisible="1" />
+                                <field name="floor_num" attrs="{'invisible':[('is_floor', '=', False)]}" class="oe_inline" />
+                                <field name="property_tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" class="oe_inline" />
+                            </group>
+
+
+                        </div>
+
+                    </group>
+                    <group>
+                        <field name="property_manager_id" class="oe_inline" />
+                        <field name="is_confirmed" readonly="1" invisible="1" />
+
+
+                    </group>
+
+                    <group>
+                        <notebook>
+                            <page string="Specifications">
+                                <field name="property_line_ids" />
+                            </page>
+
+                            <page string="Sub Properties" attrs="{'invisible':['|' ,('is_mu','=',False),('purpose','=','residentialandcommercial')]}">
+                                <group>
+                                    <field name="num_subProperties" />
+                                </group>
+                                <field name="property_child_ids" context="{'default_street': street, 'default_street2': street2, 'default_city': city, 'default_district': district, 'default_zip': zip, 'default_country_id': country_id, 'default_property_construction_date': property_construction_date}"></field>
+                                <!-- <field name="property_child_ids" ></field> -->
+                            </page>
+                            <page string="Sub Properties (Residential)" attrs="{'invisible':['|' ,('is_mu','=',False),('purpose','!=','residentialandcommercial')]}">
+                                <field name="residential_child_ids"></field>
+                            </page>
+
+                            <page string="Sub Properties (Commercial)" attrs="{'invisible':['|' ,('is_mu','=',False),('purpose','!=','residentialandcommercial')]}">
+                                <field name="commercial_child_ids"></field>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <!-- <field name="message_follower_ids"/> -->
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    
+
+    <!-- property search view -->
+    <record id="property_view_search" model="ir.ui.view">
+        <field name="name">property.view.search</field>
+        <field name="model">property</field>
+        <field name="arch" type="xml">
+            <search string="Tests">
+                <field name="search_by_lines" />
+                <field name="property_type_id" />
+                <field name="property_owner_id" />
+                <!-- <field name="for_sale" />
+                <field name="for_rent" /> -->
+                <!-- <field name="expected_rent_price" />
+                <field name="expected_sale_price" /> -->
+                <field name="parent_property_id" />
+                <field name="city" />
+                <field name="property_line_ids" />
+                <filter string="Type" name='type' context="{'group_by': 'property_type_id'}" />
+                <filter string="Apartment" name='apartment_filter' domain="[('property_type_name_related','=','Apartment')]" />
+                <filter string="Building" name='building_filter' domain="[('property_type_name_related','=','Building')]" />
+                <filter string="Chalet" name='chalet_filter' domain="[('property_type_name_related','=','Chalet')]" />
+                <filter string="Floor" name='floor_filter' domain="[('property_type_name_related','=','Floor')]" />
+                <filter string="Land" name='land_filter' domain="[('property_type_name_related','=','Land')]" />
+                <filter string="Office" name='office_filter' domain="[('property_type_name_related','=','Office')]" />
+                <filter string="Showroom" name='showroom_filter' domain="[('property_type_name_related','=','Showroom')]" />
+                <filter string="Villa" name='villa_filter' domain="[('property_type_name_related','=','Villa')]" />
+                <filter string="Villa Duplex" name='villa_duplex_filter' domain="[('property_type_name_related','=','Villa Duplex')]" />
+
+
+            </search>
+        </field>
+    </record>
+
+    <!-- property.line tree view -->
+    that helps identifying quotations for the same property
+    <record id="property_line_view_tree" model="ir.ui.view">
+        <field name="name">property.line.view.tree</field>
+        <field name="model">property.line</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="property_unit_id" />
+                <field name="property_unit_qty" />
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <template id="propertyorder">
+        <t t-foreach="docs" t-as="property">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+
+                    <div class="page">
+                        <h1>
+                            <strong>Property Name : </strong>
+                            <span t-field="property.name" />
+                        </h1>
+                        <br></br>
+                        <div>
+                            <strong>Property Purpose:  </strong>
+                            <span t-field="property.purpose" />
+                        </div>
+                        <div>
+                            <strong>Property Type:  </strong>
+                            <span t-field="property.property_type_id" />
+                        </div>
+                        <div>
+                            <strong>Property Owner:  </strong>
+                            <span t-field="property.property_owner_id" />
+                        </div>
+                        <br></br>
+                        <div class="row">
+                            <div class="col-6">
+                            <h5>
+                                <strong>
+                                    Property Address
+                                </strong>
+                            </h5>
+                            </div>
+                            <div class="col-6">
+                                <h5>
+                                    <strong>
+                                        Property Information
+                                    </strong>
+                                </h5>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="row">
+                            <div class="col-6">
+                                <div>
+                                    <span t-field="property.street" />
+                                </div>
+                                <div>
+                                    <span t-field="property.street2" />
+                                </div>
+                                <div>
+                                    <span t-field="property.city"  />
+                                    <span t-field="property.district"/>
+                                    <span t-field="property.zip"/>
+                                </div>
+                                <div>
+                                    <span t-field="property.country_id" />
+                                </div>
+                            </div>
+                            <div>
+                                <div name="information">
+                                    <strong>Property Deed Number:  </strong>
+                                    <span t-field="property.deed_number" />
+                                </div>
+                                <div>
+                                    <strong>Is Multi Unit:  </strong>
+                                    <span t-field="property.is_mu" />
+                                </div>
+                                <div>
+                                    <strong>Residential Type:  </strong>
+                                    <span t-field="property.residential_type" />
+                                </div>
+                                <div >
+                                    <strong>Property Building Age:  </strong>
+                                    <span t-field="property.property_building_age" />
+                                </div>
+                                <div >
+                                    <strong>Property Area:  </strong>
+                                    <span t-field="property.property_area" />
+                                </div>
+                                <div >
+                                    <strong>Features:  </strong>
+                                    <span t-field="property.property_tag_ids" widget="many2many_tags" />
+                                </div>
+                                <div>
+                                    <span t-if="property.parent_property_id == True ">
+                                        <strong>Parent Property:  </strong>
+                                        <span t-field="property.parent_property_id" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <h3>
+                            <strong>
+                            Units Information 
+                            </strong>
+                        </h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Unit Name</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="lines" t-value="property.mapped('property_line_ids')" />
+                                <tr t-foreach="lines" t-as="line">
+                                    <td>
+                                        <span t-field="line.property_unit_id" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.property_unit_qty" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <span t-if="property.num_subProperties != '' ">
+                            <h3 t-if="property.purpose != 'residentialandcommercial' ">
+                                <strong>
+                                    Sub Properties </strong>
+                            </h3>
+                            <table class="table" t-if="property.purpose != 'residentialandcommercial' ">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>State</th>
+                                        <th>Property Type</th>
+                                        <th name="owner_name">Property Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="properties" t-value="property.mapped('property_child_ids')" />
+                                    <tr t-foreach="properties" t-as="sub_property">
+                                        <td>
+                                            <span t-field="sub_property.name" />
+                                        </td>
+                                        <td>
+                                            <span t-field="sub_property.state" />
+                                        </td>
+                                        <td>
+                                            <span t-field="sub_property.property_type_id" />
+                                        </td>
+                                        <td name="owner_name">
+                                            <span t-field="sub_property.property_owner_id" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span t-if="len(property.mapped('residential_child_ids')) != 0 ">
+                                <h3 t-if="property.purpose == 'residentialandcommercial' ">
+                                    <strong>
+                                    Sub Properties (Residential) </strong>
+                                </h3>
+                                <table class="table" t-if="property.purpose == 'residentialandcommercial' ">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>State</th>
+                                            <th>Property Type</th>
+                                            <th name="owner_name">Property Owner</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="properties" t-value="property.mapped('residential_child_ids')" />
+                                        <tr t-foreach="properties" t-as="sub_property">
+                                            <td>
+                                                <span t-field="sub_property.name" />
+                                            </td>
+                                            <td>
+                                                <span t-field="sub_property.state" />
+                                            </td>
+                                            <td>
+                                                <span t-field="sub_property.property_type_id" />
+                                            </td>
+                                            <td name="owner_name">
+                                                <span t-field="sub_property.property_owner_id" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+
+                            <span t-if="len(property.mapped('commercial_child_ids')) != 0 ">
+
+                                <h3 t-if="property.purpose == 'residentialandcommercial' ">
+                                    <strong>
+                                    Sub Properties (Commercial)</strong>
+                                </h3>
+                                <table class="table" t-if="property.purpose == 'residentialandcommercial' ">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>State</th>
+                                            <th>Property Type</th>
+                                            <th name="owner_name">Property Owner</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-set="properties" t-value="property.mapped('commercial_child_ids')" />
+                                        <tr t-foreach="properties" t-as="sub_property">
+                                            <td>
+                                                <span t-field="sub_property.name" />
+                                            </td>
+                                            <td>
+                                                <span t-field="sub_property.state" />
+                                            </td>
+                                            <td>
+                                                <span t-field="sub_property.property_type_id" />
+                                            </td>
+                                            <td name="owner_name">
+                                                <span t-field="sub_property.property_owner_id" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </span>
+                        <br></br>
+                        <br></br>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

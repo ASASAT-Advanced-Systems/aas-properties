@@ -1,0 +1,18 @@
+<odoo>
+    <menuitem id="property_menu_root" name="Property Management" web_icon="aas_property_management,static/description/icon.png" >
+        <menuitem id="property_first_level_menu"  name="Properties" sequence ="0">
+            <menuitem id="property_menu_act" action="property_action" name="Properties" sequence ="0" />
+            <menuitem id="property_owner_menu_act" action="res_partner_owners_action" name="Owners" sequence ="1" />
+        </menuitem>
+        
+        <menuitem id="reporting_first_level_menu" name="Reporting" sequence ="1" >
+            <menuitem id="reporting_menu_act" action="property_report_dashboards_action" name="View Analysis" />
+        </menuitem>
+
+        <menuitem id="property_settings_first_level_menu" name="Configuration" sequence ="2">
+            <menuitem id="property_unit_menu_act" action="property_unit_action" name="Property Units" sequence ="1" />
+            <menuitem id="property_tag_menu_act" action="property_tag_action" name="Property Features" sequence ="2" />
+            <menuitem id="property_type_menu_act" action="property_type_action" name="Property Types" sequence ="0" />
+        </menuitem>
+    </menuitem>
+</odoo>

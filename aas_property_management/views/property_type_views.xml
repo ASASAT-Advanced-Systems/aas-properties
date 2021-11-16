@@ -1,0 +1,117 @@
+<odoo>
+    <!-- property.type action window -->
+    <record id="property_type_action" model="ir.actions.act_window">
+        <field name="name">Property Types</field>
+        <field name="res_model">property.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- property.type tree view -->
+    <record id="property_type_view_tree" model="ir.ui.view">
+        <field name="name">property.type.view.tree</field>
+        <field name="model">property.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name" />
+                <field name="property_count" />
+                <field name="is_mu" />
+                <field name="purpose" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- property.type form view -->
+    <record id="property_type_view_form" model="ir.ui.view">
+        <field name="name">property.type.view.form</field>
+        <field name="model">property.type</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <!-- Add your fields here -->
+                    <h1>
+                        <group>
+                            <field name="name" />
+                            
+
+                             
+
+                        </group>
+                    </h1>
+                    <group>
+
+                        <field name = "is_floor"/>
+                        <field name="is_mu" />
+                        <field name="has_parent_type" />
+                        <field name="has_street_length" />
+
+                        
+                        <field name="purpose" />
+                        <field name = "parent_type_id"/>
+                        <field name = "child_type_ids" readonly ="1"/>
+                     
+                    </group>
+                    <group>
+                        <notebook>
+                            <page string="Lines">
+                                <field name="property_type_line_ids" />
+                            </page>
+                            <!-- <page string="Properties">
+                                <field name="property_ids">
+                                    <tree>
+                                        <field name="name" />
+                                        <field name="city" />
+                                        <field name="for_sale" />
+                                        <field name="for_rent" />
+                                        <field name="expected_rent_price" />
+                                        <field name="expected_sale_price" />
+                                    </tree>
+                                </field>
+                            </page> -->
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- property.type search view -->
+    <record id="property_type_view_search" model="ir.ui.view">
+        <field name="name">property.type.view.search</field>
+        <field name="model">property.type</field>
+        <field name="arch" type="xml">
+            <search string="Search Description">
+                <!-- Add your fields here -->
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+
+    <!-- property.type.line tree view
+    <record id="model_name_view_tree" model="ir.ui.view">
+        <field name="name">property.type.line.view.tree</field>
+        <field name="model">property.type.line</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                Add your fields here
+                <field name="property_unit_id" />
+            </tree>
+        </field>
+    </record>
+
+    property.type.line form view
+    <record id="model_name_view_form" model="ir.ui.view">
+        <field name="name">property.type.line.view.form</field>
+        <field name="model">property.type.line</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        Add your fields here
+                        <field name="property_unit_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record> -->
+</odoo>

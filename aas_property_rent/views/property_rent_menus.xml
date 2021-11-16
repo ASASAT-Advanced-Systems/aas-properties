@@ -1,0 +1,28 @@
+<odoo>
+    <menuitem id="property_rent_menu_root" name="Property Rent" action="property_kanban_action" web_icon="aas_property_rent,static/description/icon.png" >
+        <menuitem id="property_rent_first_level_menu" name="Orders" sequence = "0">
+            <menuitem id="property_rent_menu_act" action="property_rent_action" name="All Rents" sequence = "0"/>
+            <menuitem id="property_rent_quotation_menu_act" action="property_rent_quotation_action" name="Quotations" sequence = "1" />
+            <menuitem id="property_rent_ongoing_menu_act" action="property_rent_ongoing_action" name="Ongoing" sequence = "2" />
+            <menuitem id="tenant_menu_act" action="res_partner_tenants_action" name="Tenants"  sequence = "3"/>
+            <menuitem id="tenant_menu_act" name="Tenants" />
+        </menuitem>
+        <menuitem id="property_rent_to_renew_first_level_menu" action="property_rent_to_renew_action" name="To Renew" sequence ="10"/>
+        <menuitem id="property_rent_to_confirm_first_level_menu" action="property_rent_to_confirm_action" name="To Confirm" sequence ="20"/>
+        <menuitem id="property_payments_level_menu" name="Payments">
+            <!-- <menuitem id="rent_menu_act" action="rent_action" name="Rents" />
+            <menuitem id="deposit_menu_act" action="deposit_action" name="Deposits" /> -->
+            <menuitem id="rent_menu_act" name="Rents" />
+            <menuitem id="deposit_menu_act" name="Deposits" />
+        </menuitem>
+        <menuitem id="property_first_level_menu" name="Properties" sequence ="30">
+            <menuitem id="property_available_menu_act" action="available_property_action" name="Available" />
+            <menuitem id="property_rented_menu_act" action="rented_property_action" name="Rented" />
+        </menuitem>
+        <menuitem id="reporting_first_level_menu" name="Reporting" sequence ="40">
+            <menuitem id="reporting_menu_act" action="property_rent_report_dashboards_action" name="View Analysis" />
+        </menuitem>
+        <menuitem id="configuration_first_level_menu" name="Configuration" sequence ="50">
+        </menuitem>
+    </menuitem>
+</odoo>

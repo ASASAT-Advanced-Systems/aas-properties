@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="tag_data_1" model="property.tag">
+            <field name="name">Assembeled Kitchen</field>
+        </record>
+        <record id="tag_data_2" model="property.tag">
+            <field name="name">Furnished</field>
+        </record>
+        <record id="tag_data_3" model="property.tag">
+            <field name="name">Parking</field>
+        </record>
+        <record id="tag_data_4" model="property.tag">
+            <field name="name">Roof</field>
+        </record>
+        <record id="tag_data_5" model="property.tag">
+            <field name="name">Outdoor Room</field>
+        </record>
+    </data>
+</odoo>

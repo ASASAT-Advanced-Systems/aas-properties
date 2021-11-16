@@ -1,0 +1,70 @@
+Owner
+Address
+City
+Rent type
+Rent To
+
+Name (char)
+
+
+Area (Building) 
+Area (Land)
+Deed Number
+Purpose (sellection)
+MUB(bool)
+Direction of streets
+
+Bathrooms 			(R,C)
+Kitchens 			(R,C)
+Rooms 				(R)
+Driver Room 			(R)
+Maid_Room			(R)
+lundry_Room			(R)	
+Storage_Room			(R,C)
+Outdoor_Room (مشب)		(R)	
+Salon				(R)
+Food_Room (مقلط)		(R)
+
+
+Balcony				(R)	
+AC_Type (selection)		(RC.R,C)
+Garage				(R)
+Basement ()			(RC.R,C)
+Pool				(R)
+Elevator			(RC.R.C)
+assembeled_ketchin (bool)	(R,C)
+entrance 			(R,RC,C)
+Furnished (bool)		(RC.R,C)
+Parking				(RC.R,C)
+Garden				(R)
+Game_field			(R)			
+Fire_Place			(R)
+Playground			(R)
+Outside_entrance (مدخل مستقل) 	(R)
+
+Floor_num			(R,C)
+floors				(RC,R,C)
+Roof (bool)			(RC,R,C)
+Appartments			(RC,R)
+offices			(RC)
+showrooms			(RC)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

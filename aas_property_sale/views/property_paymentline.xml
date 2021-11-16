@@ -1,0 +1,27 @@
+<odoo>
+    <!-- <record id="property_salepaymentline_action" model="ir.actions.act_window">
+        <field name="name">Property Sale Paymentline</field>
+        <field name="res_model">property.salepaymentline</field>
+        <field name="view_mode">tree</field>
+ 
+    </record> -->
+ 
+ 
+ 
+     <record id="property_salepaymentline_view_tree" model="ir.ui.view">
+         <field name="name">property.salepaymentline.view.tree</field>
+         <field name="model">property.salepaymentline</field>
+         <field name="arch" type="xml">
+             <tree string="payments"  >
+                 <field name="name" />
+
+                 <field name="Payment_cost"  attrs="{'invisible':[('Payment_cost', '=', 0)]}"/>
+                 <field name="tax"  attrs="{'invisible':[('tax', '=', 0)]}" />
+                 <field name="total_amount" attrs="{'invisible':[('total_amount', '=', 0)]}"/>
+             </tree>
+         </field>
+     </record>
+
+     
+     
+</odoo>

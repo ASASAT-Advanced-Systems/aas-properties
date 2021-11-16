@@ -1,0 +1,231 @@
+<odoo>
+
+    <!-- property.sale action window -->
+    <record id="property_sale_action" model="ir.actions.act_window">
+        <field name="name">Sale Records</field>
+        <field name="res_model">property.sale</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <record id="property_sale_action2" model="ir.actions.act_window">
+        <field name="name">Sale Records</field>
+        <field name="res_model">property.sale</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <record id="property_sale_quotation_action" model="ir.actions.act_window">
+        <field name="name">Sale Records</field>
+        <field name="res_model">property.sale</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False, 'search_default_quotation_sale': True}</field>
+    </record>
+    <record id="property_sale_to_confirm_action" model="ir.actions.act_window">
+        <field name="name">Sale Orders to Confirm</field>
+        <field name="res_model">property.sale</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False}</field>
+        <field name="domain">[('state','=', 'reserved')]</field>
+    </record>
+
+    <!-- property.sale tree view -->
+    <record id="property_sale_view_tree" model="ir.ui.view">
+        <field name="name">property.sale.view.tree</field>
+        <field name="model">property.sale</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger= "state in ['canceled']" decoration-success = "state in ['sale order']" decoration-warning = "state in ['reserved']"  decoration-info = "state in ['on hold']" >
+                <!-- Add your fields here -->
+                <field name="name" />
+                <field name="property_id" />
+                <field name="state" optional='show' widget="badge" decoration-danger= "state in ['canceled']" decoration-success = "state in ['sale order']" decoration-warning = "state in ['reserved']"  decoration-info = "state in ['on hold']" />
+                <field name="property_state_related" optional='hide' />
+                <field name="customer_id" optional='show' />
+                <field name="offered_price" optional='show' />
+                <field name="expected_sale_price_related" optional='hide' />
+                <field name="date" />
+                <field name="invoice_status" widget="badge" decoration-success = "invoice_status in ['invoiced']" decoration-warning = "invoice_status in ['to invoice']" decoration-primary = "invoice_status in ['nothing to invoice']" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- property.sale form view -->
+    <record id="property_sale_view_form" model="ir.ui.view">
+        <field name="name">property.sale.view.form</field>
+        <field name="model">property.sale</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <field name="is_invoice_created" invisible="1" />
+                    <button name="action_set_confirm" type="object" string="CONFIRM" class="btn-primary" attrs="{'invisible':[('state', '!=', 'reserved')]}" />
+                    <button name="action_create_invoice" type="object" string="CREATE INVOICE" class="btn-primary" context="{'open_invoices': True}" attrs="{'invisible':['|',('state', '!=', 'sale order'),('is_invoice_created', '!=', False)]}" />
+                    <!-- <button name="%(action_view_sale_advance_payment_inv)d" string="Create Deposit" type="action" context="{'default_advance_payment_method': 'fixed'}" attrs="{'invisible': ['|',('state', '!=', 'quotation'),('is_deposit_created', '=', True)]}" class="btn-primary" /> -->
+                    <button name="action_set_reserve" type="object" string="RESERVE" class="btn-primary" attrs="{'invisible':[('state', '!=', 'quotation')]}" />
+                    <!-- <button name="action_set_sale" type="object" string="sale" class="btn-primary" states="reserved" /> -->
+                    <button name="action_set_cancel" type="object" string="CANCEL" states="quotation,reserved,on hold" class="btn-secondary" />
+                    <button name="action_reset_to_quotation" type="object" string="Reset To Quotation" states="reserved,canceled" class="btn-secondary" />
+                    <field name="state" widget="statusbar" statusbar_visible="quotation,reserved,sale order,on hold" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_invoice"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible': [('is_invoice_created', '=', False)]}"
+                            string="Invoice">
+                        </button>
+                    </div>
+                    <group>
+                        <h1>
+                            <field name="name" read_only="1" />
+                        </h1>
+                    </group>
+                   
+                    <gruop>
+                        <h3>
+                            <strong>
+                                Sale Information
+                            </strong>
+                        </h3>
+                    </gruop>
+                    <group>
+                        <div>
+                            <group>
+                                <!-- <field name="owner_ids"/> -->
+                                
+                                <field name="prev_property_owner_id" attrs="{'readonly':[('state', '=','sale order')],'invisible':[('state', '!=','sale order')]}"/>
+                                <field name="property_owner_id_related" readonly = "1" attrs="{'invisible':[('state', '=','sale order')]}"/>
+                                <field name="customer_id" string = "Customer" class= "oe_inline" attrs="{'readonly':[('state', 'in',['sale order','reserved'])],'invisible':[('state', '=','sale order')]}" />
+                                <field name="customer_id" string = "New Property Owner" class= "oe_inline" attrs="{'readonly':[('state', 'in',['sale order','reserved'])],'invisible':[('state', '!=','sale order')]}" />
+                                <field name = "owner_pay_commission"/>
+                                <field name="offered_price" class= "oe_inline" attrs="{'readonly':[('state', 'in',['sale order','reserved'])]}" />
+                            </group>
+                        </div>
+                        <div>
+                            <group>
+                                <label for="date" class= "oe_inline" />
+                                <div class="o_row" >
+                                    <field name="date" class= "oe_inline"  attrs="{'readonly':[('state', 'in',['sale order','reserved'])]}"/>
+                                </div>
+                                <field name="expected_sale_price_related" />
+                            </group>
+                        </div>
+
+                       
+                    </group>
+                    <gruop>
+                        <h3>
+                            <strong>
+                                Property Information
+                            </strong>
+                        </h3>
+                    </gruop>
+                    <group>
+                        <div>
+                            <group>
+                                <field name="property_id" attrs="{'readonly': True}" options="{'no_open': True}" />
+                                <field name="property_type_id_related" />
+                                
+
+                                
+                            </group>
+                        </div>
+                        <div>
+                            <group>
+                                <label for="street_related" string="Property Address"/>
+                                <div class="o_address_format">
+                                    <field name="street_related" class="o_address_street" />
+                                    <field name="street2_related" class="o_address_street" />
+                                    <field name="city_related" class="o_address_state oe_inline" />
+                                    <field name="district_related" class="o_address_state oe_inline" />
+                                    <field name="zip_related" class="o_address_zip oe_inline" />
+                                    <field name="country_id_related" class="o_address_country" />
+                                </div>
+                            </group>
+                        </div>
+                    </group>
+                    <!-- <group>
+                        <field name="deposit" class="oe_edit_only" />
+                        <field name="deposit_amount" attrs="{'invisible':['|',('deposit', '=', False),('deposit_amount', '=', 0)]}" />
+                    </group> -->
+                        <group>
+                            <field name="user_id" readonly="1"/>
+
+                        </group>
+                    <notebook>
+                        <page string="Commission and Fees"    >
+                            <field name='payment_cost_comm_ids'      />
+                        </page>                                          
+                    </notebook>
+                </sheet>
+
+
+                <div class="o_attachment_preview" options="{'preview_priority_type': 'pdf'}" modifiers="{}" />
+                <div class="oe_chatter">
+                    <!-- <field name="message_follower_ids"/> -->
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- property.sale search view -->
+    <record id="property_sale_view_search" model="ir.ui.view">
+        <field name="name">property.sale.view.search</field>
+        <field name="model">property.sale</field>
+        <field name="arch" type="xml">
+            <search string="Search Description">
+                <field name="customer_id" />
+                <field name="offered_price" />
+                <field name="date" />
+                <filter string="Quotation" name='quotation_sale' domain="[('state', '=', 'quotation')]" />
+                <filter string="Reserved" name='reserved_sale' domain="[('state', '=', 'reserved')]" />
+                <filter string="Canceled" name='canceled_sale' domain="[('state', '=', 'canceled')]" />
+                <filter string="On Hold" name='on_hold_sale' domain="[('state', '=', 'on hold')]" />
+            </search>
+        </field>
+    </record>
+
+
+    <!-- property.sale pivot view -->
+    <record id="property_sale_view_pivot" model="ir.ui.view">
+        <field name="name">property.sale.view.pivot</field>
+        <field name="model">property.sale</field>
+        <field name="arch" type="xml">
+            <pivot string="sales Analysis" sample="1">
+                <!-- Add your fields here -->
+                <field name="city_related" type="row" />
+                <field name="state" type="col" />
+                <field name="offered_price" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <!-- property.sale graph view -->
+    <record id="model_name_view_graph" model="ir.ui.view">
+        <field name="name">property.sale.view.graph</field>
+        <field name="model">property.sale</field>
+        <field name="arch" type="xml">
+            <graph string="sales Analysis" sample="1">
+                <field name="city_related" />
+                <field name="state" />
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="property_salepaymentline_view_tree" model="ir.ui.view">
+        <field name="name">property.salepaymentline.view.tree</field>
+        <field name="model">property.salepaymentline</field>
+        <field name="arch" type="xml">
+            <tree editable = "bottom" create="false">
+                <field name = "name"/>
+                <field name = "Payment_cost"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

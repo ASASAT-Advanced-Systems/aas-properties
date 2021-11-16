@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_property_sale,access_property_sale,model_property_sale,base.group_user,1,1,1,1
+access_property_rent_report,access_property_sale_report,model_property_sale_report,base.group_user,1,1,1,1
+access_sale_prop_advance_payment_inv,access_sale_prop_advance_payment_inv,model_sale_prop_advance_payment_inv,base.group_user,1,1,1,1
+access_property_salepaymentline,access_property_salepaymentline,model_property_salepaymentline,base.group_user,1,1,1,1

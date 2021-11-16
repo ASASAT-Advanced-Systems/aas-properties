@@ -1,0 +1,286 @@
+<odoo>
+
+    <!-- property.rent action window -->
+    <record id="property_rent_action" model="ir.actions.act_window">
+        <field name="name">Rent records</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <record id="property_rent_action2" model="ir.actions.act_window">
+        <field name="name">Rent records</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'create': False}</field>
+    </record>
+
+    <record id="property_rent_ongoing_action" model="ir.actions.act_window">
+        <field name="name">Rent records</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False, 'search_default_ongoing_rent': True}</field>
+    </record>
+
+    <record id="property_rent_quotation_action" model="ir.actions.act_window">
+        <field name="name">Rent records</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False, 'search_default_quotation_rent': True}</field>
+    </record>
+
+    <record id="property_rent_to_renew_action" model="ir.actions.act_window">
+        <field name="name">Rent Orders to Renew</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False}</field>
+        <field name="domain">[('requires_renewal','=', True)]</field>
+    </record>
+
+    <record id="property_rent_to_confirm_action" model="ir.actions.act_window">
+        <field name="name">Rent Orders to Confirm</field>
+        <field name="res_model">property.rent</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <field name="context">{'create': False}</field>
+        <field name="domain">[('state','=', 'reserved')]</field>
+    </record>
+
+    <!-- property.rent tree view -->
+    <record id="property_rent_view_tree" model="ir.ui.view">
+        <field name="name">property.rent.view.tree</field>
+        <field name="model">property.rent</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger= "state in ['canceled']" decoration-success = "state in ['rent order']" decoration-warning = "state in ['reserved']"  decoration-info = "state in ['on hold']" >
+                <!-- Add your fields here -->
+                <field name="name" />
+                <field name="property_id" />
+                <field name="state" optional='show' widget="badge" decoration-danger= "state in ['canceled']" decoration-success = "state in ['rent order']" decoration-warning = "state in ['reserved']"  decoration-info = "state in ['on hold']" />
+                <field name="property_state_related" optional='hide' />
+                <field name="payment_type" optional='show' />
+                <field name="property_rent_type_related" optional='hide' />
+                <!-- <field name = "minimum_price"/> -->
+                <field name="tenant_id" optional='show' />
+                <field name="offered_price" optional='show' />
+                <field name="expected_rent_price_related" optional='hide' />
+                <field name="starting_date" />
+                <field name="asked_for_renewal" invisible="1"/>
+                <field name="requires_renewal" invisible="1"/>
+                <field name="invoice_status" widget="badge" decoration-success = "invoice_status in ['invoiced']" decoration-warning = "invoice_status in ['to invoice']" decoration-primary = "invoice_status in ['nothing to invoice']" />
+                
+                <button name="action_set_renew" type="object" string="RENEW" class="btn-primary" attrs="{'invisible':['|','|',('requires_renewal', '=', False),('asked_for_renewal','!=',False),('state','!=','rent order')]}"/>
+                <button name="action_cancel_renew" type="object" string="CANCEL RENEW" class="btn-primary" attrs="{'invisible':['|','|',('requires_renewal', '=', False),('asked_for_renewal','=',False),('state','!=','rent order')]}"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <!-- property.rent form view -->
+    <record id="property_rent_view_form" model="ir.ui.view">
+        <field name="name">property.rent.view.form</field>
+        <field name="model">property.rent</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <field name="asked_for_renewal" invisible="1" />
+                    <field name="requires_renewal"  invisible="1"/>
+                    <field name="is_invoice_created" invisible="1" />
+                    <button name="action_set_confirm" type="object" string="CONFIRM" class="btn-primary" attrs="{'invisible':[('state', '!=', 'reserved')]}" />
+                    <button name="action_create_invoice" type="object" string="CREATE INVOICE" class="btn-primary" context="{'open_invoices': True}" attrs="{'invisible':['|',('state', '!=', 'rent order'),('is_invoice_created', '!=', False)]}" />
+                    <!-- <button name="%(action_view_rent_advance_payment_inv)d" string="Create Deposit" type="action" context="{'default_advance_payment_method': 'fixed'}" attrs="{'invisible': ['|',('state', '!=', 'quotation'),('is_deposit_created', '=', True)]}" class="btn-primary" /> -->
+                    <button name="action_set_reserve" type="object" string="RESERVE" class="btn-primary" attrs="{'invisible':[('state', '!=', 'quotation')]}" />
+                    <!-- <button name="action_set_rent" type="object" string="RENT" class="btn-primary" states="reserved" /> -->
+                    <button name="action_set_end" type="object" string="END RENT" class="btn-primary" states="rent order" />
+                    <button name="action_set_renew" type="object" string="RENEW" class="btn-primary" attrs="{'invisible':['|','|',('requires_renewal', '=', False),('asked_for_renewal','!=',False),('state','!=','rent order')]}"/>
+                    <button name="action_cancel_renew" type="object" string="CANCEL RENEW" class="btn-primary" attrs="{'invisible':['|','|',('requires_renewal', '=', False),('asked_for_renewal','=',False),('state','!=','rent order')]}"/>
+                    <button name="action_set_cancel" type="object" string="CANCEL" states="quotation,reserved,rent order,on hold" class="btn-secondary" />
+                    <button name="action_reset_to_quotation" type="object" string="Reset To Quotation" states="reserved,canceled" class="btn-secondary" />
+                    <field name="state" widget="statusbar" statusbar_visible="quotation,reserved,rent order,on hold" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_invoice"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible': [('is_invoice_created', '=', False)]}"
+                            string="Invoice">
+                        </button>
+                    </div>
+                    <group>
+                        <h1>
+                            <field name="name" read_only="1" />
+                        </h1>
+                    </group>
+                   
+                    <gruop>
+                        <h3>
+                            <strong>
+                                Tenancy Information
+                            </strong>
+                        </h3>
+                    </gruop>
+                    <group>
+                        <div>
+                            <group>
+                                <!-- <field name="owner_ids"/> -->
+                                <field name="property_owner_id_related" />
+                                <field name="tenant_id" class= "oe_inline" attrs="{'readonly':[('state', 'in',['rent order','reserved'])]}" />
+                                <field name="offered_price" class= "oe_inline" attrs="{'readonly':[('state', 'in',['rent order','reserved'])]}" />
+                                <field name="payment_type" class= "oe_inline" attrs="{'readonly':[('state', 'in',['rent order','reserved'])]}" />
+                                <!-- <field name="offered_price" class= "oe_inline" context="{'default_offered_price': expected_rent_price_related}"/>
+                                <field name="payment_type" class= "oe_inline" context="{'default_payment_type': property_rent_type_related}"/> -->
+                            </group>
+                        </div>
+                        <div>
+                            <group>
+                                <label for="starting_date" string="Starting from" class= "oe_inline" />
+                                <div class="o_row" >
+                                    <field name="starting_date" class= "oe_inline"  attrs="{'readonly':[('state', 'in',['rent order','reserved'])]}"/>
+                                    <span> to </span>
+                                    <field name="end_date" />
+                                </div>
+                                <field name="expected_rent_price_related" />
+                                <field name="property_rent_type_related" />
+                            </group>
+                        </div>
+
+                       
+                    </group>
+                    <gruop>
+                        <h3>
+                            <strong>
+                                Property Information
+                            </strong>
+                        </h3>
+                    </gruop>
+                    <group>
+                        <div>
+                            <group>
+                                <field name="property_id" attrs="{'readonly': True}" options="{'no_open': True}" />
+                                <field name="property_type_id_related" />
+                                
+
+                                
+                            </group>
+                        </div>
+                        <div>
+                            <group>
+                                <label for="street_related" string="Property Address"/>
+                                <div class="o_address_format">
+                                    <field name="street_related" class="o_address_street" />
+                                    <field name="street2_related" class="o_address_street" />
+                                    <field name="city_related" class="o_address_state oe_inline" />
+                                    <field name="district_related" class="o_address_state oe_inline" />
+                                    <field name="zip_related" class="o_address_zip oe_inline" />
+                                    <field name="country_id_related" class="o_address_country" />
+                                </div>
+                            </group>
+                        </div>
+                    </group>
+                    <!-- <group>
+                        <field name="deposit" class="oe_edit_only" />
+                        <field name="deposit_amount" attrs="{'invisible':['|',('deposit', '=', False),('deposit_amount', '=', 0)]}" />
+                    </group> -->
+                        <group>
+                            <field name="user_id" readonly="1"/>
+
+                        </group>
+                    <notebook>
+                        <page string="Commission and Fees"  attrs="{'invisible':[('is_invoice_created', '=',True)]}"  >
+                                <strong >
+                                    Commission And Fees
+                                </strong>
+                            <field name='payment_cost_comm_ids'      />
+
+
+                            <!-- <field name='move_ids' readonly="1"   attrs="{'invisible':[('is_invoice_created', '=',False)]}"/> -->
+
+                                     
+
+                            
+                        </page>
+                        <page string ="Payments">
+                            <strong>
+                                Payment Schedule
+                            </strong>
+                            <field name='payment_cost_paym_ids'   />
+
+                        </page>
+                                              
+                       
+                    </notebook>
+                </sheet>
+
+
+                <div class="o_attachment_preview" options="{'preview_priority_type': 'pdf'}" modifiers="{}" />
+                <div class="oe_chatter">
+                    <!-- <field name="message_follower_ids"/> -->
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- property.rent search view -->
+    <record id="property_rent_view_search" model="ir.ui.view">
+        <field name="name">property.rent.view.search</field>
+        <field name="model">property.rent</field>
+        <field name="arch" type="xml">
+            <search string="Search Description">
+                <field name="payment_type" />
+                <field name="tenant_id" />
+                <field name="offered_price" />
+                <field name="starting_date" />
+                <filter string="Quotation" name='quotation_rent' domain="[('state', '=', 'quotation')]" />
+                <filter string="Reserved" name='reserved_rent' domain="[('state', '=', 'reserved')]" />
+                <filter string="Ongoing" name='ongoing_rent' domain="[('state', '=', 'rent order')]" />
+                <filter string="Canceled" name='canceled_rent' domain="[('state', '=', 'canceled')]" />
+                <filter string="On Hold" name='on_hold_rent' domain="[('state', '=', 'on hold')]" />
+                <filter string="Ended" name='ended_rent' domain="[('state', '=', 'end')]" />
+            </search>
+        </field>
+    </record>
+
+
+    <!-- property.rent pivot view -->
+    <record id="property_rent_view_pivot" model="ir.ui.view">
+        <field name="name">property.rent.view.pivot</field>
+        <field name="model">property.rent</field>
+        <field name="arch" type="xml">
+            <pivot string="Rents Analysis" sample="1">
+                <!-- Add your fields here -->
+                <field name="city_related" type="row" />
+                <field name="state" type="col" />
+                <field name="offered_price" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <!-- property.rent graph view -->
+    <record id="model_name_view_graph" model="ir.ui.view">
+        <field name="name">property.rent.view.graph</field>
+        <field name="model">property.rent</field>
+        <field name="arch" type="xml">
+            <graph string="Rents Analysis" sample="1">
+                <field name="city_related" />
+                <field name="state" />
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="property_rentpaymentline_view_tree" model="ir.ui.view">
+        <field name="name">property.rentpaymentline.view.tree</field>
+        <field name="model">property.rentpaymentline</field>
+        <field name="arch" type="xml">
+            <tree editable = "bottom" create="false">
+                <field name = "name"/>
+                <field name = "Payment_cost"/>
+                <field name = "Due_Date"/>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

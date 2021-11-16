@@ -1,0 +1,1651 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* aas_property_rent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 08:25+0000\n"
+"PO-Revision-Date: 2021-08-12 08:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "# of Properties"
+msgstr "عدد العقارات"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "# of orders"
+msgstr "عدد الطلبات"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "# of tenants"
+msgstr "عدد المستأجرين"
+
+#. module: aas_property_rent
+#: model:ir.actions.report,print_report_name:aas_property_rent.action_report_property_rent
+msgid "'Property Rent Report - %s' % (object.property_id.name)"
+msgstr "'مستند طلب إيجار - %s' % (object.property_id.name)"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "<span> to </span>"
+msgstr "<span> إلى </span>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid ""
+"<strong>\n"
+"                                            Direction of Streets\n"
+"    \n"
+"                                        </strong>"
+msgstr ""
+"<strong>\n"
+"                                            إتجاهات الشوارع\n"
+"    \n"
+"                                        </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid ""
+"<strong>\n"
+"                                        Commission And Fees</strong>"
+msgstr ""
+"<strong>\n"
+"                                        العمولة والرسوم</strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid ""
+"<strong>\n"
+"                                        Commission, Administrative Fees  and Payments Schedule </strong>"
+msgstr ""
+"<strong>\n"
+"                                        العمولة، الرسوم وجدول الدفعات </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid ""
+"<strong>\n"
+"                                        Payment Schedule</strong>"
+msgstr ""
+"<strong>\n"
+"                                        جدول الدفعات</strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid ""
+"<strong>\n"
+"                                        Property Address\n"
+"                                    </strong>"
+msgstr ""
+"<strong>\n"
+"                                        عنوان العقار\n"
+"                                    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid ""
+"<strong>\n"
+"                                        Property Information\n"
+"                                    </strong>"
+msgstr ""
+"<strong>\n"
+"                                        معلومات العقار\n"
+"                                    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid ""
+"<strong>\n"
+"                                    Commission And Fees\n"
+"                                </strong>"
+msgstr ""
+"<strong>\n"
+"                                    العمولة والرسوم\n"
+"                                </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid ""
+"<strong>\n"
+"                                Payment Schedule\n"
+"                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                جدول الدفعات\n"
+"                            </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid ""
+"<strong>\n"
+"                                Property Information\n"
+"                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                معلومات العقار\n"
+"                            </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid ""
+"<strong>\n"
+"                                Tenancy Information\n"
+"                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                معلومات الإيجار\n"
+"                            </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>  Tenancy Information  </strong>"
+msgstr "<strong>  معلومات الإيجار  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>    To    </strong>"
+msgstr "<strong>    إلى    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Contract Type: </strong>"
+msgstr "<strong>نوع العقد: </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "<strong>East    </strong>"
+msgstr "<strong>شرق    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "<strong>For Rent:  </strong>"
+msgstr "<strong>معروض للإيجار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "<strong>None </strong>"
+msgstr "لا يوجد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "<strong>North    </strong>"
+msgstr "<strong>شمال    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Payment Type:  </strong>"
+msgstr "<strong>نوع الدفع:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Property Address </strong>"
+msgstr "<strong>عنوان العقار </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Property Information </strong>"
+msgstr "<strong>معلومات العقار </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Property Type:  </strong>"
+msgstr "<strong>نوع العقار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Property:  </strong>"
+msgstr "<strong>العقار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "<strong>Refundable Insurance:  </strong>"
+msgstr "<strong>التأمين المسترد:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "<strong>Rent Price:  </strong>"
+msgstr "<strong>قيمة الإيجار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Rent Price: </strong>"
+msgstr "<strong>قيمة الإيجار: </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Rent State:  </strong>"
+msgstr "<strong>حالة الإيجار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "<strong>Rent Type:  </strong>"
+msgstr "<strong>نوع الإيجار:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "<strong>South    </strong>"
+msgstr "<strong>جنوب    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>Tenant:  </strong>"
+msgstr "<strong>المستأجر:  </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "<strong>West    </strong>"
+msgstr "<strong>غرب    </strong>"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "<strong>  Starting_date: </strong>"
+msgstr "<strong>  تاريخ البداية: </strong>"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_rent_advance_payment_inv__deposit_account_id
+msgid "Account used for deposits"
+msgstr "الحساب المستخدم للعربون"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Accounts"
+msgstr "الحسابات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_needaction
+msgid "Action Needed"
+msgstr "الاجراء الطلوب"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_ids
+msgid "Activities"
+msgstr "النشاطات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "وسام الاجراء المستثنى"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_state
+msgid "Activity State"
+msgstr "حالة الاجراء"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع الاجراء"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Add to 'To Renew' Menu Within (days)"
+msgstr "أضف إلى قائمة يتطلب التجديد خلال (عدد الأيام)"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Administrative Fees"
+msgstr "رسوم إدارية"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_menu_act
+msgid "All Rents"
+msgstr "جميع الإيجارات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__Payment_cost
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__rent_type__1
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__payment_type__1
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__payment_type__1
+msgid "Annually"
+msgstr "سنوي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__asked_for_renewal
+msgid "Asked for renewal"
+msgstr "طلب التجديد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: aas_property_rent
+#: model:ir.actions.server,name:aas_property_rent.property_check_auto_renewal_cron_ir_actions_server
+#: model:ir.cron,cron_name:aas_property_rent.property_check_auto_renewal_cron
+#: model:ir.cron,name:aas_property_rent.property_check_auto_renewal_cron
+msgid "Auto Renewal Check"
+msgstr "التأكد من التجديد التلقائي"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_search_inherit
+#: model:ir.ui.menu,name:aas_property_rent.property_available_menu_act
+msgid "Availabe"
+msgstr "العقارات المتاحة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__property_rent_state__available
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_state__available
+msgid "Available"
+msgstr "متاح"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Avg. Exp. Price"
+msgstr "متوسط القيمة المتوقعة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Avg. Offered Price"
+msgstr "متوسط القيمة المعروضة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "CANCEL"
+msgstr "إلغاء"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_tree
+msgid "CANCEL RENEW"
+msgstr "إلغاء طلب التجديد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "CONFIRM"
+msgstr "تأكيد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "CONFIRMED"
+msgstr "مؤكد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "CREATE INVOICE"
+msgstr "إنشاء فاتورة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__can_do_service
+msgid "Can Do Service"
+msgstr "نستطيع تقديم الخدمة و الصيانة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rentpaymentline_view_tree
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_rent_advance_payment_inv
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__canceled
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__canceled
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__canceled
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Canceled"
+msgstr "تم إلغاؤه"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_city
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "City"
+msgstr "المدينة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__color
+msgid "Color Index"
+msgstr "مؤشر اللون"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Commission"
+msgstr "عمولة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_comm_admin_account_id
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Commission and Administrative Fees Account"
+msgstr "حساب العمولة والرسوم الإدارية"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Commission and Fees"
+msgstr "العمولة والرسوم"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Commission and Fees Tax"
+msgstr "ضريبة العمولة والرسوم"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__company_responsible_for_service
+msgid "Company is responsiple for service"
+msgstr "الشركة مسؤولة عن تقديم الخدمة و الصيانة"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.configuration_first_level_menu
+msgid "Configuration"
+msgstr "إعدادات التكوين"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__rent_type
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__property_rent_type_related
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__country_id_related
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Country"
+msgstr "الدولة"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.action_view_rent_advance_payment_inv
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_rent_advance_payment_inv
+msgid "Create Deposit"
+msgstr "إنشاء عربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__advance_payment_method
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Create Rent Quotation"
+msgstr "إنشاء تسعيرة إيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_rent_advance_payment_inv
+msgid "Create and View Deposit"
+msgstr "إنشاء وعرض العربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__create_uid
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__create_uid
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__create_uid
+msgid "Created by"
+msgstr "تم إنشاؤه بواسطة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__create_date
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__create_date
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه بتاريخ"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__credit_account_id
+msgid "Credit Account"
+msgstr "حساب الدائن"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_administrative_fees
+msgid "Default Administrative Fees Percentage"
+msgstr "النسبة الافتراضية للرسوم الادارية"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_commission
+msgid "Default Commission Percentage"
+msgstr "النسبة الافتراضية للعمولة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_service_fees
+msgid "Default Service Fees Percentage"
+msgstr "النسبة الفتراضية لرسوم الخدمات و الصيانة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/rent_make_invoice_advance.py:0
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__deposit
+#, python-format
+msgid "Deposit"
+msgstr "العربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__deposit_account_id
+msgid "Deposit Account"
+msgstr "حساب العربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__deposit_amount
+msgid "Deposit Amount"
+msgstr "قيمة العربون"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/rent_make_invoice_advance.py:0
+#, python-format
+msgid "Deposit of %s%%"
+msgstr "عربون بمبلغ"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.deposit_menu_act
+msgid "Deposits"
+msgstr "العربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_move__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "District"
+msgstr "الحي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__amount
+msgid "Down Payment Amount"
+msgstr "قيمة الدفعة المقدمة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__fixed_amount
+msgid "Down Payment Amount (Fixed)"
+msgstr "قيمة الدفعة المقدمة (ثابت)"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__rent_advance_payment_inv__advance_payment_method__fixed
+msgid "Down payment (fixed amount)"
+msgstr "دفعة مقدمة (قيمة ثابتة)"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__rent_advance_payment_inv__advance_payment_method__percentage
+msgid "Down payment (percentage)"
+msgstr "دفعة مقدمة (نسبة مئوية)"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_kanban
+msgid "Dropdown menu"
+msgstr "قائمة منسدلة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__Due_Date
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "END RENT"
+msgstr "إنهاء الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__end
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__end
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__end
+msgid "End"
+msgstr "منتهي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Ended"
+msgstr "منتهي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_expected_rent_price
+msgid "Exp. Rent Price"
+msgstr "قيمة الإيجار المتوقعة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__expected_rent_price
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__expected_rent_price_related
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "Expected Rent Price"
+msgstr "قيمة الإيجار المتوقعة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property.py:0
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__for_rent
+#, python-format
+msgid "For Rent"
+msgstr "معروض للإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_graph
+msgid "Graph Description"
+msgstr "وصف الرسم التوضيحي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner__has_rents
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_users__has_rents
+msgid "Has Rents"
+msgstr "يوجد إيجارات مسجلة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_move__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__rent_order_id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__id
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة تحديد الإجراء المستثنى"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_needaction
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم اختياره، يوجد رسائل جديدة تتطلب انتباهك"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_has_error
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم اختياره، بعض الرسائل لم تصل بالشكل الصحيح"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property.py:0
+#: model:ir.model.fields,help:aas_property_rent.field_property__refundable_insurance
+#, python-format
+msgid ""
+"Insurance amount that will be refunded at the end of the rent with no damage"
+" to the property"
+msgstr "قيمة التأمين المسترد بعد نهاية الإيجار في حال عدم وجود أضرار للعقار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Invoice Created"
+msgstr "تم إنشاء الفاتورة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_rent_advance_payment_inv
+msgid "Invoice Rents Order"
+msgstr "فوترة طلبات الإيجارات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__invoice_status
+msgid "Invoice Status"
+msgstr "حالة الفاتورة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__invoice_status__invoiced
+msgid "Invoiced"
+msgstr "مفوتر بالكامل"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__is_any_sub_for_rent
+msgid "Is Any Sub For Rent"
+msgstr "هل أي من العقارات الداخلبة معروض للإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_bank_statement_line__is_deposit
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_move__is_deposit
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_payment__is_deposit
+msgid "Is Deposit"
+msgstr "هل يوجد عربون"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_is_follower
+msgid "Is Follower"
+msgstr "هل هو متابع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__is_invoice_created
+msgid "Is Invoice Created"
+msgstr "هل تم إنشاء الفاتورة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__is_rent_payment
+msgid "Is Rent Payment"
+msgstr "هل هي دفعة إيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__name
+msgid "Item"
+msgstr "قطعة"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_move____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_property____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__write_uid
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__write_uid
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__write_date
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__write_date
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الأساسي"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Max. Exp. Price"
+msgstr "أعلى قيمة متوقعة للإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Max. Offered Price"
+msgstr "أعلى قيمة معروضة للإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في إيصال الرسالة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Min. Exp. Price"
+msgstr "أدنى قيمة متوقعة للإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Min. Offered Price"
+msgstr "أدنى قيمة معروضة للإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__rent_type__12
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__payment_type__12
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__payment_type__12
+msgid "Monthly"
+msgstr "شهري"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__move_ids
+msgid "Move Ids"
+msgstr "قيود"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__move_ids_payment_state
+msgid "Move Ids Payment State"
+msgstr "حالة دفع القيود"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "Name"
+msgstr "الوصف"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "تاريخ انتهاء الاجراء التالي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص الاجراء التالي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع الاجراء التالي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__property_rent_state__not_available
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_state__not_available
+msgid "Not Available"
+msgstr "غير متاح"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rentpaymentline__state__not_paid
+msgid "Not Paid"
+msgstr "غير مدفوع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__invoice_status__nothing_to_invoice
+msgid "Nothing To Invoice"
+msgstr "لا توجد مبالغ لفوترتها"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__name
+msgid "Number"
+msgstr "رقم الطلب"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الاجراءات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي لم تصل بالشكل الصحيح"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروؤة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__offered_price
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_offered_price
+msgid "Offered Price"
+msgstr "القيمة المعروضة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__on_hold
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__on_hold
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__on_hold
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "On Hold"
+msgstr "معلق"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_ongoing_menu_act
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Ongoing"
+msgstr "جاري"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_first_level_menu
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rentpaymentline__state__paid
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rentpaymentline_view_tree
+msgid "Pay"
+msgstr "دفع"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Payment"
+msgstr "الدفعة "
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__payment_cost_comm_ids
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__payment_cost_paym_ids
+msgid "Payment Amount"
+msgstr "قيمة الدفعة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__payment_type
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__payment_type
+msgid "Payment Type"
+msgstr "نوع الدفعة"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_payments_level_menu
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "Payments"
+msgstr "الدفعات"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_pivot
+msgid "Pivot Description"
+msgstr "وصف الجدول"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_id
+#: model:ir.ui.menu,name:aas_property_rent.property_first_level_menu
+msgid "Properties"
+msgstr "العقارات"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.available_property_action
+#: model:ir.actions.act_window,name:aas_property_rent.property_kanban_action
+#: model:ir.actions.act_window,name:aas_property_rent.rented_property_action
+#: model:ir.model.fields,field_description:aas_property_rent.field_rent_advance_payment_inv__property_id
+msgid "Property"
+msgstr "العقار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "Property Address"
+msgstr "عنوان العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__city_related
+msgid "Property City"
+msgstr "المدينة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__district_related
+msgid "Property District"
+msgstr "الحي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__property_owner_id_related
+msgid "Property Owner"
+msgstr "مالك العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_bank_statement_line__property_rent_id
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_move__property_rent_id
+#: model:ir.model.fields,field_description:aas_property_rent.field_account_payment__property_rent_id
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Property Rent"
+msgstr "إيجار العقار"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_menu_root
+msgid "Property Rent"
+msgstr "إيجارات العقارات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__property_rent_id
+msgid "Property Rent Id"
+msgstr "معرف إيجار العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__property_rent_ids
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner__property_rent_ids
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_users__property_rent_ids
+msgid "Property Rent Ids"
+msgstr "معرفات إيجار العقار"
+
+#. module: aas_property_rent
+#: model:ir.actions.report,name:aas_property_rent.action_report_property_rent
+msgid "Property Rent Report"
+msgstr "تقرير إيجار العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_state
+msgid "Property State"
+msgstr "حالة العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__street_related
+msgid "Property Street"
+msgstr "شارع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__street2_related
+msgid "Property Street2"
+msgstr "شارع2"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__property_id
+msgid "Property Title"
+msgstr "مسمى العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__property_type_id_related
+msgid "Property Type"
+msgstr "نوع العقار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Property Types"
+msgstr "أنواع العقار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__zip_related
+msgid "Property ZIP"
+msgstr "الرمز البريدي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__payment_type__4
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__payment_type__4
+msgid "Quarterly"
+msgstr "ربع سنوي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__quotation
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__quotation
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__quotation
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Quotation"
+msgstr "عرض سعر"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_quotation_menu_act
+msgid "Quotations"
+msgstr "عروض الاسعار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_tree
+msgid "RENEW"
+msgstr "طلب تجديد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "RESERVE"
+msgstr "حجز"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__refundable_insurance
+#, python-format
+msgid "Refundable Insurance"
+msgstr "تأمين مسترد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__renew_period
+msgid "Renew Period"
+msgstr "فترة طلب التجديد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Renewal Settings"
+msgstr "إعدادات تجديد الإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Rent Administrative Fees"
+msgstr "الرسوم الإدارية للإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__rent_administrative_fees
+msgid "Rent Admistration Fees (%)"
+msgstr "الرسوم الإدارية للإيجار (%)"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_rent_advance_payment_inv
+msgid "Rent Advance Payment Invoice"
+msgstr "فاتوة الدفع المسبق للإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__rent_comm_admin_account_id
+msgid "Rent Comm Admin Account"
+msgstr "حساب العمولة والرسوم الإدارية للإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Rent Commission"
+msgstr "عمولة الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__rent_commission
+msgid "Rent Commission (%)"
+msgstr "عمولة الإيجار (%)"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__rent_order
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__rent_order
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__rent_order
+msgid "Rent Order"
+msgstr "طلب إيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Rent Orders"
+msgstr "طلبات الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_to_confirm_action
+msgid "Rent Orders to Confirm"
+msgstr "طلبات إيجار للتأكيد"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_to_renew_action
+msgid "Rent Orders to Renew"
+msgstr "طلبات إيجار للتجديد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Rent Payments Tax"
+msgstr "ضريبة دفعات الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__rent_payment_tax
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_payment_tax
+msgid "Rent Payments Tax Percentage"
+msgstr "نسبة ضريبة دفعات الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.actions.server,name:aas_property_rent.property_rent_check_renewal_cron_ir_actions_server
+#: model:ir.cron,cron_name:aas_property_rent.property_rent_check_renewal_cron
+#: model:ir.cron,name:aas_property_rent.property_rent_check_renewal_cron
+msgid "Rent Renewal Check"
+msgstr "التأكد من التجديد التلقائي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__rent_service_account_id
+msgid "Rent Service Account"
+msgstr "حساب رسوم الخدمات والصيانة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Rent Service Fees"
+msgstr "رسوم الخدمات والصيانة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__rent_service_fees
+msgid "Rent Service Fees (%)"
+msgstr "رسوم الخدمات والصيانة (%)"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__property_rent_ids_state
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__property_rent_state
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__state
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_rent_type
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__rent_order_state
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__property_rent_state_related
+msgid "Rent State"
+msgstr "حالة الإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.propertyorder_inherit
+msgid "Rent Type"
+msgstr "نوع الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_report_dashboards_action
+msgid "Rent dashboards"
+msgstr "لوحة تقارير الإيجار"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Rent order with the number <b>%s</b> has been <b>Ended</b>"
+msgstr "طلب الإيجار رقم <b>%s</b> تغيرت حالته إلى <b>منتهي</b>"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_action
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_action2
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_ongoing_action
+#: model:ir.actions.act_window,name:aas_property_rent.property_rent_quotation_action
+msgid "Rent records"
+msgstr "طلبات الإيجار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Rent status"
+msgstr "حالة الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__is_rented
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__property_rent_state__rented
+msgid "Rented"
+msgstr "مؤجر"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rented_menu_act
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_search_inherit
+msgid "Rented"
+msgstr "العقارات المؤجرة"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.rent_menu_act
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_partner_form_inherited
+msgid "Rents"
+msgstr "الإيجارات"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_property_rent_report
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.model_name_view_graph
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_pivot
+msgid "Rents Analysis"
+msgstr "تحليل بيانات الإيجارات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property__rents_count
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_partner__rents_count
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_users__rents_count
+msgid "Rents Count"
+msgstr "عدد الإيجارات"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.reporting_first_level_menu
+msgid "Reporting"
+msgstr "تقراير"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__requires_renewal
+msgid "Requires Renewal"
+msgstr "يحتاج إلى تجديد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property__property_rent_state__reserved
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__state__reserved
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_rent_type__reserved
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__property_state__not_available_(reserved)
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__rent_order_state__reserved
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Reserved"
+msgstr "محجوز"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "Reset To Quotation"
+msgstr "تعيينه كعرض سعر"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في وصول الـSMS"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__renewed_user_id
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__user_id
+msgid "Salesman"
+msgstr "موظف المبيعات"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_search
+msgid "Search Description"
+msgstr "وصف البحث"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__payment_type__2
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent_report__payment_type__2_
+msgid "Semiannually"
+msgstr "نصف سنوي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__sequence
+msgid "Sequence"
+msgstr "الترتيب"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Service Fees"
+msgstr "رسوم الخدمة والصيانة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_service_account_id
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Service Fees Account"
+msgstr "حساب رسوم الخدمة والصيانة"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Service and Maintainance"
+msgstr "الخدمة والصيانة"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.action_property_rent_config_settings
+#: model:ir.ui.menu,name:aas_property_rent.menu_property_rent_commission_fees_settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Specifications"
+msgstr "المواصفات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__starting_date
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__starting_date
+msgid "Starting Date"
+msgstr "تاريخ البداية"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_form
+msgid "Starting from"
+msgstr "يبدأ من"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__property_state_related
+msgid "State"
+msgstr "الحالة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__state
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "Status"
+msgstr "الحالة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناء على الاجراء\n"
+"تجاوز: تجاوز تاريخ الانتهاء\n"
+"اليوم: تاريخ الإجراء هو اليوم\n"
+"مخطط: الاجراءات المستقبلية"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Street 2..."
+msgstr "شارع 2 ..."
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Street..."
+msgstr "شارع..."
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Sub Properties"
+msgstr "العقارات الداخلية"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Sub Properties (Commercial)"
+msgstr "العقارات الداخلية (التجارية)"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "Sub Properties (Residential)"
+msgstr "العقارات الداخلية (السكنية)"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__rent_tax_id
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__rent_tax_id
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__tax
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_report_dashboards_view_dashboard
+msgid "Tenant/Property"
+msgstr "مستأجر لكل عقار"
+
+#. module: aas_property_rent
+#: model:ir.actions.act_window,name:aas_property_rent.res_partner_tenants_action
+#: model:ir.ui.menu,name:aas_property_rent.tenant_menu_act
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.view_res_partner_filter_inherit
+msgid "Tenants"
+msgstr "المستأجرين"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__tenant_id
+msgid "Tenent"
+msgstr "المستأجر"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__tenant_id
+msgid "Tenents"
+msgstr "المستأجرين"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_rent.constraint_res_config_settings_check_administrative_fees
+#, python-format
+msgid "The Administrative Fees must be positive"
+msgstr "قيمة الرسوم الإدارية يجب أن تكون موجبة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_rent.constraint_res_config_settings_check_commission
+#, python-format
+msgid "The Commission must be positive"
+msgstr "قيمة العمولة يجب أن تكون موجبة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_rent.constraint_res_config_settings_check_renew_period
+#, python-format
+msgid "The Renew Period must be positive"
+msgstr "فترة طلب التجديد يجب أن تكون موجبة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_rent.constraint_res_config_settings_check_rent_tax
+#, python-format
+msgid "The Rent Tax must be positive"
+msgstr "ضريبة الإيجار يجب أن تكون موجبة"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid ""
+"The Rent order Cannot be Confirmed because the property is not available"
+msgstr "لا يمكن تأكيد طلب الإيجار لأن العقار غير متاح"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_rent.constraint_res_config_settings_check_service_fees
+#, python-format
+msgid "The Service Fees must be positive"
+msgstr "قيمة رسوم الخدمة والصيانة يجب أن تكون موجبة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_res_config_settings__can_do_service
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.res_config_settings_view_form
+msgid "The company can undertake services and maintainance"
+msgstr "الشركة بإمكانها القيام بأعمال الخدمة والصيانة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_rent_advance_payment_inv__fixed_amount
+msgid "The fixed amount to be invoiced in advance, taxes excluded."
+msgstr ""
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_rent_advance_payment_inv__amount
+msgid "The percentage of amount to be invoiced in advance, taxes excluded."
+msgstr ""
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property.py:0
+#, python-format
+msgid "The renting price cannot be less than or equal zero "
+msgstr "قيمة الإيجار لا يمكن ان تكون أقل من أو تساوي الصفر"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/rent_make_invoice_advance.py:0
+#, python-format
+msgid "The value of the deposit amount must be positive."
+msgstr "قيمة العربون يجب أن تكون أكبر من الصفر"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_to_confirm_first_level_menu
+msgid "To Confirm"
+msgstr "يتطلب التأكيد"
+
+#. module: aas_property_rent
+#: model:ir.model.fields.selection,name:aas_property_rent.selection__property_rent__invoice_status__to_invoice
+msgid "To Invoice"
+msgstr "في إنتظار الفوترة"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.property_rent_to_renew_first_level_menu
+msgid "To Renew"
+msgstr "يتطلب التجديد"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_view_kanban
+msgid "To be rented:"
+msgstr "نوع عقد الإيجار:"
+
+#. module: aas_property_rent
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#: code:addons/aas_property_rent/models/property_rent.py:0
+#, python-format
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rentpaymentline__total_amount
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rent_order
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent_report__property_type_id
+msgid "Type"
+msgstr "النوع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع الاجراء المستثنى"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروؤة"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروؤة"
+
+#. module: aas_property_rent
+#: model:ir.ui.menu,name:aas_property_rent.reporting_menu_act
+msgid "View Analysis"
+msgstr "عرض البيانات"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,field_description:aas_property_rent.field_property_rent__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property_rent__website_message_ids
+msgid "Website communication history"
+msgstr "محفوظات تواصل الموقع"
+
+#. module: aas_property_rent
+#: model:ir.model.fields,help:aas_property_rent.field_property__company_responsible_for_service
+msgid "Will the company undertake maintainance and service of the property?"
+msgstr "هل الشركة ستقوم بأعمال الخدمة والصيانة للعقار؟"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_rentpaymentline_view_tree
+msgid "payments"
+msgstr "الدفعات"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_property
+msgid "property"
+msgstr "العقار"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_property_rentpaymentline
+msgid "property paymentline"
+msgstr "دفعات الإيجار"
+
+#. module: aas_property_rent
+#: model:ir.model,name:aas_property_rent.model_property_rent
+msgid "property_rent"
+msgstr "إيجار العقار"
+
+#. module: aas_property_rent
+#: model_terms:ir.ui.view,arch_db:aas_property_rent.property_view_form_rent
+msgid "test"
+msgstr "اختبار"

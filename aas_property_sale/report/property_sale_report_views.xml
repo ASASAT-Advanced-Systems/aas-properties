@@ -1,0 +1,100 @@
+<odoo>
+
+    <record id="property_sale_report_dashboards_action" model="ir.actions.act_window">
+        <field name="name">Sale dashboards</field>
+        <field name="res_model">property.sale.report</field>
+        <field name="view_mode">dashboard,pivot,graph</field>
+        <field name="view_id"></field> <!-- force empty -->
+    </record>
+
+    <!-- property.sale.report graph view -->
+    <record id="property_sale_report_dashboards_view_graph" model="ir.ui.view">
+        <field name="name">property.sale.report.view.graph</field>
+        <field name="model">property.sale.report</field>
+        <field name="arch" type="xml">
+            <graph string="Graph Description" type='line' sample='1'>
+                <field name='date' type='row' interval="month" />
+                <field name='property_expected_sale_price' type='measure' />
+            </graph>
+        </field>
+    </record>
+
+    <!-- property.sale.report pivot view -->
+    <record id="property_sale_report_dashboards_view_pivot" model="ir.ui.view">
+        <field name="name">property.sale.report.view.pivot</field>
+        <field name="model">property.sale.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Pivot Description">
+                <!-- Add your fields here -->
+                <field name="property_city" type="row" />
+                <field name="property_type_id" type="col" />
+                <field name="property_expected_sale_price" type="measure" />
+                <field name="property_offered_price" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+
+    <!-- property.sale.report dashboard view -->
+    <record id="property_sale_report_dashboards_view_dashboard" model="ir.ui.view">
+        <field name="name">property.sale.report.view.dashboard</field>
+        <field name="model">property.sale.report</field>
+        <field name="arch" type="xml">
+            <dashboard>
+                <group>
+                    <view type="graph" />
+                    <!-- add a reference to the graph on the sale views -->
+                    <group>
+                        <group>
+                            <aggregate name='min_expected_price' string='Min. Exp. Price' field='property_expected_sale_price' group_operator='min' />
+                            <aggregate name='max_expected_price' string='Max. Exp. Price' field='property_expected_sale_price' group_operator='max' />
+                            <aggregate name='avg_expected_price' string='Avg. Exp. Price' field='property_expected_sale_price' group_operator='avg' />
+                        </group>
+                        <group>
+                            <aggregate name='min_offered_price' string='Min. Offered Price' field='property_offered_price' group_operator='min' />
+                            <aggregate name='max_offered_price' string='Max. Offered Price' field='property_offered_price' group_operator='max' />
+                            <aggregate name='avg_offered_price' string='Avg. Offered Price' field='property_offered_price' group_operator='avg' />
+                        </group>
+                        <group>
+                            <aggregate name='num_properties' string='# of Properties' field='property_id' group_operator='count' />
+                            <aggregate name='num_customers' string='# of customers' field='customer_id' group_operator='count' />
+                            <formula name='customer_per_property' string='Customer/Property' value='record.num_customers/record.num_properties' />
+                        </group>
+                        <group>
+                            <aggregate name='num_sale_orders' string='# of orders' field='sale_order_id' group_operator='count' clickable="False" />
+                        </group>
+                    </group>
+                    <group>
+                        <widget name="pie_chart" title="Property Types" attrs="{'groupby': 'property_type_id'}" />
+                    </group>
+                    <view type="pivot" />
+                    <!-- add a reference to the pivot on the sale views -->
+                </group>
+            </dashboard>
+        </field>
+    </record>
+
+
+    <!-- property.sale.report search view -->
+    <!-- <record id="property_sale_report_dashboards_view_search" model="ir.ui.view">
+        <field name="name">property.sale.report.view.search</field>
+        <field name="model">property.sale.report</field>
+        <field name="arch" type="xml">
+            <search string="Search Description"> -->
+    <!-- Add your fields here -->
+    <!-- property_id -->
+    <!-- property_type -->
+    <!-- property_city -->
+    <!-- customer -->
+    <!-- sale_type -->
+    <!-- payment_type -->
+    <!-- filter: quotations -->
+    <!-- filter: reserved-->
+    <!-- filter: sale orders-->
+    <!-- groupby: type-->
+    <!-- groupby: owner-->
+    <!-- groupby: city -->
+    <!-- </search>
+        </field>
+    </record> -->
+</odoo>

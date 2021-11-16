@@ -1,0 +1,1277 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* aas_property_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 09:01+0000\n"
+"PO-Revision-Date: 2021-08-12 09:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "# of Properties"
+msgstr "عدد العقارات"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "# of customers"
+msgstr "عدد العملاء"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "# of orders"
+msgstr "عدد الطلبات"
+
+#. module: aas_property_sale
+#: model:ir.actions.report,print_report_name:aas_property_sale.action_report_property_sale
+msgid "'Property Sale Report - %s' % (object.property_id.name)"
+msgstr "'مستند طلب البيع - %s' % (object.property_id.name)"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid ""
+"<strong>\n"
+"                                            Direction of Streets\n"
+"    \n"
+"                                        </strong>"
+msgstr ""
+"<strong>\n"
+"                                            إتجاه الشوارع\n"
+"    \n"
+"                                        </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid ""
+"<strong>\n"
+"                                        Commission And Fees</strong>"
+msgstr ""
+"<strong>\n"
+"                                        العمولة والرسوم</strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid ""
+"<strong>\n"
+"                                        Property Address\n"
+"                                    </strong>"
+msgstr ""
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid ""
+"<strong>\n"
+"                                        Property Information\n"
+"                                    </strong>"
+msgstr ""
+"<strong>\n"
+"                                        معلومات العقار\n"
+"                                    </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid ""
+"<strong>\n"
+"                                Property Information\n"
+"                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                معلومات العقار\n"
+"                            </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid ""
+"<strong>\n"
+"                                Sale Information\n"
+"                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                معلومات البيع\n"
+"                            </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>  Sale Information  </strong>"
+msgstr "<strong>  معلومات البيع  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Customer:  </strong>"
+msgstr "<strong>العميل:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "<strong>East    </strong>"
+msgstr "<strong>شرق    </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.propertyorder_inherit
+msgid "<strong>For Sale:  </strong>"
+msgstr "<strong>معروض للبيع:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.propertyorder_inherit
+msgid "<strong>None </strong>"
+msgstr "<strong>لا يوجد </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "<strong>North    </strong>"
+msgstr "<strong>شمال    </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Property Address </strong>"
+msgstr "<strong>عنوان العقار </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Property Information </strong>"
+msgstr "<strong>معلومات العقار </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Property Type:  </strong>"
+msgstr "<strong>نوع العقار:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Property:  </strong>"
+msgstr "<strong>العقار:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.propertyorder_inherit
+msgid "<strong>Sale Price:  </strong>"
+msgstr "<strong>قيمة البيع:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Sale Price: </strong>"
+msgstr "<strong>قيمة البيع: </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong>Sale State:  </strong>"
+msgstr "<strong>حالة الطلب:  </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "<strong>South    </strong>"
+msgstr "<strong>جنوب    </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "<strong>West    </strong>"
+msgstr "<strong>غرب    </strong>"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "<strong> Date: </strong>"
+msgstr "<strong> التاريخ: </strong>"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_sale_prop_advance_payment_inv__deposit_account_id
+msgid "Account used for deposits"
+msgstr "الحساب المستخدم للعربون"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Accounts"
+msgstr "الحسابات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_needaction
+msgid "Action Needed"
+msgstr "الأمر المطلوب"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_ids
+msgid "Activities"
+msgstr "النشاطات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#, python-format
+msgid "Administrative Fees"
+msgstr ""
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sale_menu_act
+msgid "All Sales"
+msgstr "جميع طلبات البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__Payment_cost
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_search_inherit3
+#: model:ir.ui.menu,name:aas_property_sale.property_available_menu_act
+msgid "Availabe"
+msgstr "العقارات المتاحة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property__property_sale_state__available
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__property_state__available
+msgid "Available"
+msgstr "متاح"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Avg. Exp. Price"
+msgstr "متوسط أسعار البيوع المتوقعة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Avg. Offered Price"
+msgstr "متوسط أسعار البيوع المقدمة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "CANCEL"
+msgstr "إلغاء"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "CONFIRM"
+msgstr "تأكيد"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "CONFIRMED"
+msgstr "مؤكدة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "CREATE INVOICE"
+msgstr "إنشاء فاتورة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_sale_advance_payment_inv
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__state__canceled
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__sale_order_state__canceled
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_search
+msgid "Canceled"
+msgstr "الطلبات الملغاة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_city
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "City"
+msgstr "المدينة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__color
+msgid "Color Index"
+msgstr "مؤشر اللون"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#, python-format
+msgid "Commission"
+msgstr "عمولة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__sale_comm_admin_account_id
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Commission and Administrative Fees Account"
+msgstr "حساب العمولات والرسوم الإدارية"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Commission and Fees"
+msgstr "العمولة والرسوم"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Commission and Fees Tax"
+msgstr "ضريبة العمولة والرسوم"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.configuration_first_level_menu
+msgid "Configuration"
+msgstr "إعدادات التكوين"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__country_id_related
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Country"
+msgstr "الدولة"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.action_view_sale_advance_payment_inv
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_sale_advance_payment_inv
+msgid "Create Deposit"
+msgstr "إنشاء سند عربون"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__advance_payment_method
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_sale_advance_payment_inv
+msgid "Create and View Deposit"
+msgstr "إنشاء وعرض سند العربون"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Create sale Quotation"
+msgstr "إنشاء تسعيرة بيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__create_uid
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__create_uid
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__create_uid
+msgid "Created by"
+msgstr "أُنشئ بواسطة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__create_date
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__create_date
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__credit_account_id
+msgid "Credit Account"
+msgstr "حساب الكريديت"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__customer_id
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "Customer"
+msgstr "العميل"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Customer/Property"
+msgstr "عميل / عقار"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.res_partner_customers_action
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__customer_id
+#: model:ir.ui.menu,name:aas_property_sale.customer_menu_act
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_res_partner_filter_inherit
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__date
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__sale_administrative_fees
+msgid "Default Administrative Fees Percentage"
+msgstr "نسبة الرسوم الإدارية الافتراضية"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__sale_commission
+msgid "Default Commission Percentage"
+msgstr "نسبة العمولة الافتراضية"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/sale_make_invoice_advance.py:0
+#, python-format
+msgid "Deposit"
+msgstr "عربون"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__deposit_account_id
+msgid "Deposit Account"
+msgstr "حساب العربون"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/sale_make_invoice_advance.py:0
+#, python-format
+msgid "Deposit of %s%%"
+msgstr "عربون بمبلغ"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_move__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner__display_name
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "District"
+msgstr "الحي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__amount
+msgid "Down Payment Amount"
+msgstr "مبلغ الدفعة المقدمة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__fixed_amount
+msgid "Down Payment Amount (Fixed)"
+msgstr "مبلغ الدفعة المقدمة (ثابت)"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__sale_prop_advance_payment_inv__advance_payment_method__fixed
+msgid "Down payment (fixed amount)"
+msgstr "مبلغ الدفعة المقدمة(مبلغ ثابت)"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__sale_prop_advance_payment_inv__advance_payment_method__percentage
+msgid "Down payment (percentage)"
+msgstr " الدفعة المقدمة (نسبة)"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_kanban
+msgid "Dropdown menu"
+msgstr "قائمة منسدلة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_expected_sale_price
+msgid "Exp. sale Price"
+msgstr "قيمة البيع المتوقعة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__expected_sale_price
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__expected_sale_price_related
+msgid "Expected Sale Price"
+msgstr "قيمة البيع المتوقعة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.propertyorder_inherit
+msgid "Expected sale Price"
+msgstr "قيمة البيع المتوقعة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعين (القنوات)"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين (شركاء)"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__for_sale
+msgid "For Sale"
+msgstr "معروض للبيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_graph
+msgid "Graph Description"
+msgstr "وصف الرسم التوضيحي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner__has_sales
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_users__has_sales
+msgid "Has Sales"
+msgstr "لديه طلبات بيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_move__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__sale_order_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner__id
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة لعرض مشكلة نشاط"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_needaction
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_has_error
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#, python-format
+msgid "Invoice Created"
+msgstr "أنشئت الفاتورة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_sale_advance_payment_inv
+msgid "Invoice Sales Order"
+msgstr "فاتورة طلب البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__invoice_status
+msgid "Invoice Status"
+msgstr "حالة الفاتورة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__invoice_status__invoiced
+msgid "Invoiced"
+msgstr "مفوتر بالكامل"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__is_any_sub_for_sale
+msgid "Is Any Sub For Sale"
+msgstr "هل أي من العقارات الداخلية للبيع؟"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_bank_statement_line__is_deposit
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_move__is_deposit
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_payment__is_deposit
+msgid "Is Deposit"
+msgstr "هل يوجد عربون"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_is_follower
+msgid "Is Follower"
+msgstr "هل متابع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__is_invoice_created
+msgid "Is Invoice Created"
+msgstr "هل أُنشئت الفاتورة"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_move____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_property____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner____last_update
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__write_uid
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__write_uid
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__write_date
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__write_date
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المُرفق الرئيسي"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Max. Exp. Price"
+msgstr "أعلى قيمة بيع متوقعة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Max. Offered Price"
+msgstr "أعلى قيمة بيع معروضة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ إرسال الرسالة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Min. Exp. Price"
+msgstr "أقل قيمة بيع متوقعة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Min. Offered Price"
+msgstr "أقل قيمة بيع معروضة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__move_ids
+msgid "Move"
+msgstr "قيد"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__name
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "Name"
+msgstr "الوصف"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "New Property Owner"
+msgstr "مالك العقار الجديد"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "نهاية النشاط التالي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property__property_sale_state__not_available
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__property_state__not_available
+msgid "Not Available"
+msgstr "غير متاح"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__invoice_status__nothing_to_invoice
+msgid "Nothing To Invoice"
+msgstr "لا توجد مبالغ لفوترتها"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__name
+msgid "Number"
+msgstr "الرقم"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الأوامر"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تحتاج إجراء"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي لديها خطأ في التوصيل"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل ال7غير مقروءة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__offered_price
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_offered_price
+msgid "Offered Price"
+msgstr "القيمة المعروضة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__state__on_hold
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__sale_order_state__on_hold
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_search
+msgid "On Hold"
+msgstr "معلق"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sale_first_level_menu
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__owner_pay_commission
+msgid "Owner pays commission and fees"
+msgstr "المالك يتحمل العمولة والرسوم"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__payment_cost_comm_ids
+msgid "Payment Amount"
+msgstr "مبلغ الدفعة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__move_ids_payment_state
+msgid "Payment Status"
+msgstr "حالة الدفع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_pivot
+msgid "Pivot Description"
+msgstr "الوصف المحوري"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__prev_property_owner_id
+msgid "Previous Owner"
+msgstr "المالك القديم"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_id
+#: model:ir.ui.menu,name:aas_property_sale.property_first_level_menu
+msgid "Properties"
+msgstr "العقارات"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.available_property_action
+#: model:ir.actions.act_window,name:aas_property_sale.property_kanban_action
+#: model:ir.actions.act_window,name:aas_property_sale.sold_property_action
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__property_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_sale_prop_advance_payment_inv__property_id
+msgid "Property"
+msgstr "العقار"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "Property Address"
+msgstr "عنوان العقار"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__city_related
+msgid "Property City"
+msgstr "المدينة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__district_related
+msgid "Property District"
+msgstr "الحي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__property_owner_id_related
+msgid "Property Owner"
+msgstr "مالك العقار"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_bank_statement_line__property_sale_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_move__property_sale_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_account_payment__property_sale_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__property_sale_ids
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__property_sale_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner__property_sale_ids
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_users__property_sale_ids
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Property Sale"
+msgstr "بيع العقار"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sale_menu_root
+msgid "Property Sale"
+msgstr "مبيعات العقارات"
+
+#. module: aas_property_sale
+#: model:ir.actions.report,name:aas_property_sale.action_report_property_sale
+msgid "Property Sale Report"
+msgstr "مستند طلب البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_state
+msgid "Property State"
+msgstr "حالة العقار"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__street_related
+msgid "Property Street"
+msgstr "الشارع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__street2_related
+msgid "Property Street2"
+msgstr "الشارع الثاني"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__property_type_id_related
+msgid "Property Type"
+msgstr "نوع العقار"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_report_dashboards_view_dashboard
+msgid "Property Types"
+msgstr "أنواع العقارات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__zip_related
+msgid "Property ZIP"
+msgstr "الرمز البريدي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__state__quotation
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__sale_order_state__quotation
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_search
+msgid "Quotation"
+msgstr "عرض سعر"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sale_quotation_menu_act
+msgid "Quotations"
+msgstr "عروض الأسعار"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "RESERVE"
+msgstr "حجز"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.reporting_first_level_menu
+msgid "Reporting"
+msgstr "التقارير"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property__property_sale_state__reserved
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__state__reserved
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__property_state__not_available_(reserved)
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__sale_order_state__reserved
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_search
+msgid "Reserved"
+msgstr "محجوز"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_form
+msgid "Reset To Quotation"
+msgstr "تعيينه كعرض سعر"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ إيصال رسالة الجوال"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Sale Administrative Fees"
+msgstr "الرسوم الإدارية للبيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__sale_administrative_fees
+msgid "Sale Admistration Fees (%)"
+msgstr "الرسوم الإدارية للبيع (%)"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_sale_prop_advance_payment_inv
+msgid "Sale Advance Payment Invoice"
+msgstr "فاتورة دفعة مقدمة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__sale_comm_admin_account_id
+msgid "Sale Comm Admin Account"
+msgstr "حساب العمولات والرسوم الإدارية للبيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Sale Commission"
+msgstr "عمولة البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__sale_commission
+msgid "Sale Commission (%)"
+msgstr "عمولة البيع (%)"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__state__sale_order
+msgid "Sale Order"
+msgstr "طلب بيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__property_sale_ids_state
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__state
+msgid "Sale Order State"
+msgstr "حالة طلب البيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Sale Orders"
+msgstr "طلبات البيع"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.property_sale_to_confirm_action
+msgid "Sale Orders to Confirm"
+msgstr "طلبات البيع للتأكيد"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.property_sale_action
+#: model:ir.actions.act_window,name:aas_property_sale.property_sale_action2
+#: model:ir.actions.act_window,name:aas_property_sale.property_sale_quotation_action
+msgid "Sale Records"
+msgstr "طلبات البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__property_sale_state
+msgid "Sale State"
+msgstr "حالة البيع"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.property_sale_report_dashboards_action
+msgid "Sale dashboards"
+msgstr "لوحة معلومات المبيعات"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Sale status"
+msgstr "حالة البيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.view_partner_form_inherited
+msgid "Sales"
+msgstr "المبيعات"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_property_sale_report
+msgid "Sales Analysis"
+msgstr "تحليلات المبيعات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__sales_count
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_partner__sales_count
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_users__sales_count
+msgid "Sales Count"
+msgstr "عدد طلبات البيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__user_id
+msgid "Salesman"
+msgstr "موظف المبيعات"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_search
+msgid "Search Description"
+msgstr "وصف البحث"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: aas_property_sale
+#: model:ir.actions.act_window,name:aas_property_sale.action_property_sale_config_settings
+#: model:ir.ui.menu,name:aas_property_sale.menu_property_sale_commission_fees_settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Specifications"
+msgstr "المواصفات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__property_state_related
+msgid "State"
+msgstr "الحالة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Street 2..."
+msgstr "الشارع الثاني..."
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Sub Properties"
+msgstr "العقارات الداخلية"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Sub Properties (Commercial)"
+msgstr "العقارات التجارية الداخلية"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "Sub Properties (Residential)"
+msgstr "العقارات السكنية الداخلية"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__sale_tax_id
+#: model:ir.model.fields,field_description:aas_property_sale.field_res_config_settings__sale_tax_id
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__tax
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.res_config_settings_view_form
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_sale.constraint_res_config_settings_check_administrative_fees
+#, python-format
+msgid "The Administrative Fees must be positive"
+msgstr "الرسوم الإدارية يجب أن تكون قيمتها موجبة"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_sale.constraint_res_config_settings_check_commission
+#, python-format
+msgid "The Commission must be positive"
+msgstr "العمولة يجب أن تكون قيمتها موجبة"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/res_config_settings.py:0
+#: model:ir.model.constraint,message:aas_property_sale.constraint_res_config_settings_check_sale_tax
+#, python-format
+msgid "The Rent Tax must be positive"
+msgstr "ضريبة الإيجار يجب ان تكون قيمتها موجبة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_sale_prop_advance_payment_inv__fixed_amount
+msgid "The fixed amount to be invoiced in advance, taxes excluded."
+msgstr "المبلغ الذي سيفوترمقدماً غير شامل الضريبة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_sale_prop_advance_payment_inv__amount
+msgid "The percentage of amount to be invoiced in advance, taxes excluded."
+msgstr ""
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property.py:0
+#, python-format
+msgid "The saleing price cannot be less than or equal zero"
+msgstr "قيمة البيع لا يمكن ان تكون أصغر من أو تساوي صفر"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/sale_make_invoice_advance.py:0
+#, python-format
+msgid "The value of the deposit amount must be positive."
+msgstr "قيمة العربون لا يمكن أن تكون أقل من الصفر"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sale_to_confirm_first_level_menu
+msgid "To Confirm"
+msgstr "في انتظار التأكيد"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale__invoice_status__to_invoice
+msgid "To Invoice"
+msgstr "في انتظار الفوترة"
+
+#. module: aas_property_sale
+#: code:addons/aas_property_sale/models/property_sale.py:0
+#, python-format
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_salepaymentline__total_amount
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_order
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__property_type_id
+msgid "Type"
+msgstr "النوع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الغير مقروءة"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل الغير مقروءة"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.reporting_menu_act
+msgid "View Analysis"
+msgstr "عرض البيانات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,help:aas_property_sale.field_property_sale__website_message_ids
+msgid "Website communication history"
+msgstr "محفوظات تواص الموقع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_salepaymentline_view_tree
+msgid "payments"
+msgstr "الدفعات"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_property
+msgid "property"
+msgstr "العقار"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_property_salepaymentline
+msgid "property paymentline"
+msgstr "عمولات ورسوم بيع العقار"
+
+#. module: aas_property_sale
+#: model:ir.model,name:aas_property_sale.model_property_sale
+msgid "property_sale"
+msgstr "بيع العقار"
+
+#. module: aas_property_sale
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property_sale_report__sale_order_state__sale_order
+msgid "sale Order"
+msgstr "طلب بيع"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property_sale_report__sale_order_state
+msgid "sale State"
+msgstr "حالة البيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.propertyorder_inherit
+msgid "sale Type"
+msgstr "نوع البيع"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.model_name_view_graph
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_sale_view_pivot
+msgid "sales Analysis"
+msgstr "تحليل المبيعات"
+
+#. module: aas_property_sale
+#: model:ir.model.fields,field_description:aas_property_sale.field_property__is_sold
+#: model:ir.model.fields.selection,name:aas_property_sale.selection__property__property_sale_state__sold
+
+msgid "Sold"
+msgstr "مباع"
+
+#. module: aas_property_sale
+#: model:ir.ui.menu,name:aas_property_sale.property_sold_menu_act
+msgid "Sold"
+msgstr "العقارات المباعة"
+
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_search_inherit
+msgid "sold"
+msgstr "العقارات المباعة"
+
+#. module: aas_property_sale
+#: model_terms:ir.ui.view,arch_db:aas_property_sale.property_view_form_sale
+msgid "test"
+msgstr ""

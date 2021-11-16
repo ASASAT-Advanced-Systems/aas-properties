@@ -1,0 +1,94 @@
+<odoo>
+
+
+
+    <record id="action_report_property" model="ir.actions.report">
+        <field name="name">Property Report</field>
+        <field name="model">property</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">aas_property_management.propertyorder</field>
+        <field name="report_file">aas_property_management.propertyorder</field>
+        <field name="print_report_name">'Property Report - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_property" />
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Dashboards Views -->
+
+    <!-- property.report dashboard view -->
+    <record id="property_report_dashboards_action" model="ir.actions.act_window">
+        <field name="name">Property dashboards</field>
+        <field name="res_model">property.report</field>
+        <field name="view_mode">dashboard,pivot,graph</field>
+        <field name="view_id"></field><!-- force empty -->
+    </record>
+
+    <!-- property.report graph view -->
+    <record id="property_report_dashboards_view_graph" model="ir.ui.view">
+        <field name="name">property.report.view.graph</field>
+        <field name="model">property.report</field>
+        <field name="arch" type="xml">
+            <graph string="Graph Description" type='line' sample='1'>
+                <field name='property_name' type='row' />
+                <!-- <field name='starting_date' type='row' interval="month" />
+                <field name='property_expected_rent_price' type='measure' /> -->
+            </graph>
+        </field>
+    </record>
+
+    <!-- property.report pivot view -->
+    <record id="property_report_dashboards_view_pivot" model="ir.ui.view">
+        <field name="name">property.report.view.pivot</field>
+        <field name="model">property.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Pivot Description">
+                <!-- Add your fields here -->
+                <field name='property_name' type='row' />
+                <!-- <field name="property_city" type="row" />
+                <field name="property_type_id" type="col" />
+                <field name="property_expected_rent_price" type="measure" />
+                <field name="property_offered_price" type="measure" /> -->
+            </pivot>
+        </field>
+    </record>
+
+
+    <!-- property.rent.report dashboard view -->
+    <record id="property_report_dashboards_view_dashboard" model="ir.ui.view">
+        <field name="name">property.report.view.dashboard</field>
+        <field name="model">property.report</field>
+        <field name="arch" type="xml">
+            <dashboard>
+                <view type='graph'/>
+                <group>
+                </group>
+                <view type='pivot'/>
+            </dashboard>
+        </field>
+    </record>
+
+    <!-- property.report search view -->
+    <!-- <record id="property_report_dashboards_view_search" model="ir.ui.view">
+        <field name="name">property.report.view.search</field>
+        <field name="model">property.report</field>
+        <field name="arch" type="xml">
+            <search string="Search Description"> -->
+    <!-- Add your fields here -->
+    <!-- property_id -->
+    <!-- property_type -->
+    <!-- property_city -->
+    <!-- tenant should be inherited in the rent module-->
+    <!-- rent_type -->
+    <!-- payment_type should be inherited in the rent module-->
+    <!-- filter: available -->
+    <!-- filter: not available-->
+    <!-- filter: reserved-->
+    <!-- groupby: type-->
+    <!-- groupby: owner-->
+    <!-- groupby: city -->
+    <!-- </search>
+        </field>
+    </record> -->
+
+
+</odoo>

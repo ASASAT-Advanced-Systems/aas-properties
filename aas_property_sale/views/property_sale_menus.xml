@@ -1,0 +1,19 @@
+<odoo>
+    <menuitem id="property_sale_menu_root" name="Property Sale" action="property_kanban_action" web_icon="aas_property_sale,static/description/icon.png" >
+        <menuitem id="property_sale_first_level_menu" name="Orders" sequence = "0">
+            <menuitem id="property_sale_menu_act" action="property_sale_action" name="All Sales" sequence = "0"/>
+            <menuitem id="property_sale_quotation_menu_act" action="property_sale_quotation_action" name="Quotations" sequence = "1" />
+            <menuitem id="customer_menu_act" action="res_partner_customers_action" name="Customers"  sequence = "2"/>
+        </menuitem>
+        <menuitem id="property_sale_to_confirm_first_level_menu" action="property_sale_to_confirm_action" name="To Confirm" sequence ="20"/>
+        <menuitem id="property_first_level_menu" name="Properties" sequence ="30">
+            <menuitem id="property_available_menu_act" action="available_property_action" name="Available" />
+            <menuitem id="property_sold_menu_act" action="sold_property_action" name="Sold" />
+        </menuitem>
+        <menuitem id="reporting_first_level_menu" name="Reporting" sequence ="40">
+            <menuitem id="reporting_menu_act" action="property_sale_report_dashboards_action" name="View Analysis" />
+        </menuitem>
+        <menuitem id="configuration_first_level_menu" name="Configuration" sequence ="50">
+        </menuitem>
+    </menuitem>
+</odoo>
